@@ -97,6 +97,16 @@ var config = {
 				broadcastNewsUpdates: true
 			}
 		},
+		{
+            module: 'MMM-OnScreenMenu',
+            position: 'bottom_right',
+            /* Valid positions: 'top_right', 'top_left', 'bottom_right', 'bottom_left' */
+            config: {
+                touchMode: true,
+                enableKeyboard: true,
+                // ... see more options below
+            }
+        },
 	]
 
 };

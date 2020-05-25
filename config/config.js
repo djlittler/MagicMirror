@@ -135,7 +135,7 @@ var config = {
             module: 'MMM-page-indicator',
             position: 'bottom_bar',
             config: {
-                pages: 3,
+                pages: 4,
             }
         },
         {

@@ -121,6 +121,22 @@ var config = {
                 // see below for configurable options...
             }
         },
+        {
+            module: 'MMM-pages',
+            config: {
+                modules:
+                    [[ "weatherforecast", "newsfeed"],
+                     [ "calendar", "compliments" ]],
+                fixed: ["clock", "currentweather", "MMM-page-indicator"],
+            }
+        },
+        {
+            module: 'MMM-page-indicator',
+            position: 'bottom_bar',
+            config: {
+                pages: 3,
+            }
+        }
 	]
 
 };

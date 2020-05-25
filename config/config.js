@@ -136,7 +136,26 @@ var config = {
             config: {
                 pages: 3,
             }
-        }
+        },
+        {
+		    module: 'MMM-Cursor',
+		    config: {
+			// See 'Configuration options' for more information.
+		    }
+	    },
+	    {
+            module: "MMM-Pollen",
+            position: "top_left",
+            header: "Pollen Forecast",
+            config: {
+                updateInterval: 3 * 60 * 60 * 1000, // every 3 hours
+                zip_code: "90210"
+            }
+        },
+        {
+	        module: 'mm-hide-all',
+	        position: 'bottom_right'
+        },
 	]
 
 };

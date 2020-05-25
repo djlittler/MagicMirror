@@ -107,6 +107,20 @@ var config = {
                 // ... see more options below
             }
         },
+        {
+            module: 'MMM-NetworkConnection',
+            position: 'top_right',
+            config: {
+            }
+            
+        },
+        {
+            module: 'on-this-day',
+            position: 'bottom_bar',
+            config: {
+                // see below for configurable options...
+            }
+        },
 	]
 
 };

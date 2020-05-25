@@ -126,8 +126,9 @@ var config = {
             config: {
                 modules:
                     [[ "weatherforecast", "newsfeed"],
-                     [ "calendar", "compliments" ]],
-                fixed: ["clock", "currentweather", "MMM-page-indicator"],
+                     ["MMM-Pollen"],
+                     [ "calendar", "compliments", "on -this-day" ]],
+                fixed: ["MMM-OnScreenMenu","clock", "currentweather", "MMM-page-indicator", "mm-hide-all", "MMM-NetworkConnection"],
             }
         },
         {

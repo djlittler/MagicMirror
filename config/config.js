@@ -120,11 +120,11 @@ var config = {
       module: 'MMM-KeyBindings',
       config: {
 			  evdev: {
-					enabled: false 
+					enabled: false
 				},
         enableKeyboard: true
       }
-    }
+    },
 		{
 			module: "alert",
 			classes: "default Daniel Cret Oscar Woo_Young"

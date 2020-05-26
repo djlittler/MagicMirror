@@ -37,10 +37,12 @@ var config = {
 	modules: [
 		{
 			module: "alert",
+			classes: "default"
 		},
 		{
 			module: "updatenotification",
 			position: "top_bar"
+			classes: "everyone"
 		},
 		{
 			module: "clock",
@@ -63,7 +65,7 @@ var config = {
 		{
 			module: "compliments",
 			position: "lower_third"
-			classes: "everyone"
+			classes: "everyone",
 		},
 		{
 			module: "currentweather",

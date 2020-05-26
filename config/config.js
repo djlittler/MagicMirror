@@ -44,12 +44,14 @@ var config = {
 		},
 		{
 			module: "clock",
-			position: "top_left"
+			position: "top_left",
+			classes: "default everyone"
 		},
 		{
 			module: "calendar",
-			header: "US Holidays",
+			header: "Holidays",
 			position: "top_left",
+			classes: "everyone",
 			config: {
 				calendars: [
 					{
@@ -61,13 +63,15 @@ var config = {
 		{
 			module: "compliments",
 			position: "lower_third"
+			classes: "everyone"
 		},
 		{
 			module: "currentweather",
 			position: "top_right",
+			classes: "everyone",
 			config: {
-				location: "New York",
-				locationID: "", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
+				location: "London",
+				locationID: "2643743", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
 				appid: "YOUR_OPENWEATHER_API_KEY"
 			}
 		},
@@ -75,15 +79,17 @@ var config = {
 			module: "weatherforecast",
 			position: "top_right",
 			header: "Weather Forecast",
+			classes: "everyone",
 			config: {
-				location: "New York",
-				locationID: "5128581", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
+				location: "London",
+				locationID: "2643743", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
 				appid: "YOUR_OPENWEATHER_API_KEY"
 			}
 		},
 		{
 			module: "newsfeed",
 			position: "bottom_bar",
+			classes: "everyone",
 			config: {
 				feeds: [
 					{
@@ -100,6 +106,7 @@ var config = {
 		{
             module: 'MMM-OnScreenMenu',
             position: 'bottom_right',
+            classes: "everyone",
             /* Valid positions: 'top_right', 'top_left', 'bottom_right', 'bottom_left' */
             config: {
                 touchMode: true,
@@ -110,6 +117,7 @@ var config = {
         {
             module: 'MMM-NetworkConnection',
             position: 'top_right',
+            classes: "Daniel",
             config: {
             }
             
@@ -117,12 +125,14 @@ var config = {
         {
             module: 'on-this-day',
             position: 'bottom_bar',
+            classes: "eveyone",
             config: {
                 // see below for configurable options...
             }
         },
         {
             module: 'MMM-pages',
+            classes: "everyone",
             config: {
                 modules:
                     [["MMM-Pollen" , "newsfeed"],
@@ -134,6 +144,7 @@ var config = {
         {
             module: 'MMM-page-indicator',
             position: 'bottom_bar',
+            classes: "everyone",
             config: {
                 pages: 4,
             }
@@ -148,7 +159,7 @@ var config = {
             module: "MMM-Pollen",
             position: "top_left",
             header: "Pollen Forecast",
-            classes: 'Daniel',
+            classes: 'Daniel Cret',
             config: {
                 updateInterval: 3 * 60 * 60 * 1000, // every 3 hours
                 zip_code: "90210"
@@ -157,6 +168,7 @@ var config = {
         {
 	        module: 'mm-hide-all',
 	        position: 'bottom_right'
+	        classes: "default",
         },
         {
             module: 'MMM-Face-Reco-DNN',
@@ -170,7 +182,7 @@ var config = {
                 // Module set used for strangers or if no user is detected
                 defaultClass: 'default',
                 // Set of modules which should be shown for every recognised user
-                everyoneClass: 'everyone',
+                everyoneClass: 'shared',
                 // XML to recognize with haarcascade
                 cascade: 'modules/MMM-Face-Reco-DNN/tools/haarcascade_frontalface_default.xml',
                 // Pre-encoded pickle with the faces

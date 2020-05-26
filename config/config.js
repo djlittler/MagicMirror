@@ -114,6 +114,9 @@ var config = {
       }
     },
 		{
+			module: "MMM-Dynamic-Modules",
+		},
+		{
 			module: "alert",
 			classes: "default Daniel Cret Oscar Woo_Young"
 		},

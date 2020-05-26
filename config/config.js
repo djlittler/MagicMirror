@@ -81,10 +81,10 @@ var config = {
       classes: 'default Daniel Cret Oscar Woo_Young',
       config: {
         modules: [
-					["newsfeed", , "on -this-day", "currentweather", "MMM-Spotify", "MMM-Todoist"],
+					["newsfeed", , "on -this-day", "MMM-Spotify", "MMM-Todoist", "MMM-ViewNotifications"],
 					["weatherforecast", "calendar", "MMM-Pollen"],
           ["compliments", "MMM-ISS", "MMM-ISS-Live"]],
-        fixed: ["MMM-OnScreenMenu","clock", "currentweather", "MMM-page-indicator", "mm-hide-all", "MMM-NetworkConnection", "MMM-ViewNotifications"],
+        fixed: ["MMM-OnScreenMenu","clock", "currentweather", "MMM-page-indicator", "mm-hide-all", "MMM-NetworkConnection"],
       }
     },
     {
@@ -230,15 +230,20 @@ var config = {
 		    }
 		  }
 		},
+
+		//Development
     {
       module: 'MMM-ViewNotifications',
       position: "top_left",
       header: "Notifications",
-			classes: "default Daniel",
+			classes: "Daniel",
       config: {
         // See below for configurable options
+				excludeModules: ["clock"],
       }
     },
+
+		//Not working
 		{
 			module: 'MMM-Todoist',
 			position: 'top_left',	// This can be any of the regions. Best results in left or right regions.

@@ -42,18 +42,18 @@ var config = {
 		{
 			module: "updatenotification",
 			position: "top_bar",
-			classes: "everyone"
+			classes: "shared"
 		},
 		{
 			module: "clock",
 			position: "top_left",
-			classes: "default everyone"
+			classes: "default shared"
 		},
 		{
 			module: "calendar",
 			header: "Holidays",
 			position: "top_left",
-			classes: "everyone",
+			classes: "shared",
 			config: {
 				calendars: [
 					{
@@ -65,12 +65,12 @@ var config = {
 		{
 			module: "compliments",
 			position: "lower_third",
-			classes: "everyone"
+			classes: "shared"
 		},
 		{
 			module: "currentweather",
 			position: "top_right",
-			classes: "everyone",
+			classes: "shared",
 			config: {
 				location: "London",
 				locationID: "2643743", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
@@ -81,7 +81,7 @@ var config = {
 			module: "weatherforecast",
 			position: "top_right",
 			header: "Weather Forecast",
-			classes: "everyone",
+			classes: "shared",
 			config: {
 				location: "London",
 				locationID: "2643743", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
@@ -91,7 +91,7 @@ var config = {
 		{
 			module: "newsfeed",
 			position: "bottom_bar",
-			classes: "everyone",
+			classes: "shared",
 			config: {
 				feeds: [
 					{
@@ -108,7 +108,7 @@ var config = {
 		{
             module: 'MMM-OnScreenMenu',
             position: 'bottom_right',
-            classes: "everyone",
+            classes: "shared",
             /* Valid positions: 'top_right', 'top_left', 'bottom_right', 'bottom_left' */
             config: {
                 touchMode: true,
@@ -126,14 +126,14 @@ var config = {
         {
             module: 'on-this-day',
             position: 'bottom_bar',
-            classes: "eveyone",
+            classes: "shared",
             config: {
                 // see below for configurable options...
             }
         },
         {
             module: 'MMM-pages',
-            classes: "everyone",
+            classes: "shared",
             config: {
                 modules:
                     [["MMM-Pollen" , "newsfeed"],
@@ -145,7 +145,7 @@ var config = {
         {
             module: 'MMM-page-indicator',
             position: 'bottom_bar',
-            classes: "everyone",
+            classes: "shared",
             config: {
                 pages: 4,
             }
@@ -169,7 +169,7 @@ var config = {
         {
 	        module: 'mm-hide-all',
 	        position: 'bottom_right',
-	        classes: "default"
+	        classes: "default shared"
         },
         {
             module: 'MMM-Face-Reco-DNN',

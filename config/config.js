@@ -90,7 +90,7 @@ var config = {
     {
       module: 'MMM-page-indicator',
       position: 'bottom_bar',
-      classes: 'Default Daniel Cret Oscar Woo_Young',
+      classes: 'Daniel Cret Oscar Woo_Young',
       config: {
           pages: 4,
       }

@@ -82,8 +82,8 @@ var config = {
       config: {
         modules: [
 					["newsfeed", , "on -this-day", "currentweather", "MMM-Spotify", "MMM-Todoist"],
-					["weatherforecast", "calendar", "MMM-Pollen", "MMM-ISS-Live"],
-          ["compliments"]],
+					["weatherforecast", "calendar", "MMM-Pollen"],
+          ["compliments", "MMM-ISS", "MMM-ISS-Live"]],
         fixed: ["MMM-OnScreenMenu","clock", "currentweather", "MMM-page-indicator", "mm-hide-all", "MMM-NetworkConnection", "MMM-ViewNotifications"],
       }
     },
@@ -234,6 +234,7 @@ var config = {
       module: 'MMM-ViewNotifications',
       position: "top_left",
       header: "Notifications",
+			classes: "default Daniel"
       config: {
         // See below for configurable options
       }
@@ -256,14 +257,30 @@ var config = {
 		{
 			disabled: false,
 			module: 'MMM-ISS-Live',
-			position: 'bottom left',
+			position: 'bottom_right',
 			classes: 'Daniel',
 			config: {
-			   useHeader: false,                // true if you want a header
-			   header: "ISS Feed",                      // Change in config file. useHeader must be true
-			   animationSpeed: 1000,            // fade speed
+		   useHeader: false,                // true if you want a header
+		   header: "ISS Feed",                      // Change in config file. useHeader must be true
+		   animationSpeed: 1000,            // fade speed
 			}
-		}
+		},
+		{
+			disabled: false,
+			module: 'MMM-ISS',
+			position: 'bottom_right',
+			classes: 'Daniel',
+			config: {
+			  country: "England",
+			  city: "London",
+		    lat: "51.5336",                // latitude
+		    lng: "-0.1199",                // longitude
+		    units: "km",                   // mi = miles, mph / km = kilometers, km/h
+		    useHeader: false,              // true if you want a header
+		    header: "",                    // Any text you want. useHeader must be true
+		    updateInterval: 5 * 60 * 1000,
+			 }
+		},
 	]
 };
 

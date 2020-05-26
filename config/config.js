@@ -41,7 +41,7 @@ var config = {
 		},
 		{
 			module: "updatenotification",
-			position: "top_bar"
+			position: "top_bar",
 			classes: "everyone"
 		},
 		{

@@ -211,7 +211,7 @@ var config = {
     },
 		{
 		  module: "MMM-Spotify",
-		  position: "top_right", // "bottom_bar" or "top_bar" for miniBar
+		  position: "bottom_left", // "bottom_bar" or "top_bar" for miniBar
 			classes: 'Daniel',
 		  config: {
 		    debug: false, // debug mode

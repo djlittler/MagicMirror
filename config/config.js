@@ -133,7 +133,7 @@ var config = {
         },
        {
             module: 'MMM-pages',
-            classes: "default shared"
+            classes: "default shared",
             config: {
                 modules:
                     [["MMM-Pollen" , "newsfeed"],

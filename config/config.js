@@ -153,7 +153,7 @@ var config = {
 			config: {
 				location: "London",
 				locationID: "2643743", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
-				appid: "YOUR_OPENWEATHER_API_KEY"
+				appid: "95bcc2e45fcf190858c5273b37e604f0"
 			}
 		},
 		{
@@ -164,7 +164,7 @@ var config = {
 			config: {
 				location: "London",
 				locationID: "2643743", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
-				appid: "YOUR_OPENWEATHER_API_KEY"
+				appid: "95bcc2e45fcf190858c5273b37e604f0"
 			}
 		},
 		{
@@ -211,7 +211,7 @@ var config = {
     },
 		{
 		  module: "MMM-Spotify",
-		  position: "bottom_left", // "bottom_bar" or "top_bar" for miniBar
+		  position: "bottom_right", // "bottom_bar" or "top_bar" for miniBar
 			classes: 'Daniel',
 		  config: {
 		    debug: false, // debug mode

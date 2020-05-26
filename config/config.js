@@ -82,7 +82,7 @@ var config = {
       config: {
         modules: [
 					["newsfeed", , "on -this-day", "currentweather", "MMM-Spotify", "MMM-Todoist"],
-					["weatherforecast", "calendar", "MMM-Pollen"],
+					["weatherforecast", "calendar", "MMM-Pollen", "MMM-ISS-Live"],
           ["compliments"]],
         fixed: ["MMM-OnScreenMenu","clock", "currentweather", "MMM-page-indicator", "mm-hide-all", "MMM-NetworkConnection", "MMM-ViewNotifications"],
       }
@@ -250,8 +250,19 @@ var config = {
 				fade: false,
 				// projects and/or labels is mandatory:
 				projects: [ "Magic Mirror" ],
-				labels: [ "Magic Mirror", "Important" ] // Tasks for any projects with these labels will be shown.
+				//labels: [ "Magic Mirror", "Important" ] // Tasks for any projects with these labels will be shown.
       }
+		},
+		{
+			disabled: false,
+			module: 'MMM-ISS-Live',
+			position: 'bottom left',
+			classes: 'Daniel',
+			config: {
+			   useHeader: false,                // true if you want a header
+			   header: "ISS Feed",                      // Change in config file. useHeader must be true
+			   animationSpeed: 1000,            // fade speed
+			}
 		}
 	]
 };

@@ -81,7 +81,7 @@ var config = {
       classes: 'default Daniel Cret Oscar Woo_Young',
       config: {
         modules: [
-					["newsfeed", , "on -this-day", "currentweather", "MMM-Spotify"],
+					["newsfeed", , "on -this-day", "currentweather", "MMM-Spotify", "MMM-Todoist"],
 					["weatherforecast", "calendar", "MMM-Pollen"],
           ["compliments"]],
         fixed: ["MMM-OnScreenMenu","clock", "currentweather", "MMM-page-indicator", "mm-hide-all", "MMM-NetworkConnection", "MMM-ViewNotifications"],
@@ -240,7 +240,7 @@ var config = {
     },
 		{
 			module: 'MMM-Todoist',
-			position: 'top_right',	// This can be any of the regions. Best results in left or right regions.
+			position: 'top_left',	// This can be any of the regions. Best results in left or right regions.
 			header: 'Todoist', // This is optional
 			classes: 'Daniel',
 			config: { // See 'Configuration options' for more information.

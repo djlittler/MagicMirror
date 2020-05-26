@@ -81,8 +81,8 @@ var config = {
       classes: 'default Daniel Cret Oscar Woo_Young',
       config: {
         modules: [
-					["MMM-Pollen", "newsfeed", "calendar", "on -this-day", "currentweather", "MMM-Spotify"],
-					["weatherforecast"],
+					["newsfeed", , "on -this-day", "currentweather", "MMM-Spotify"],
+					["weatherforecast", "calendar", "MMM-Pollen"],
           ["compliments"]],
         fixed: ["MMM-OnScreenMenu","clock", "currentweather", "MMM-page-indicator", "mm-hide-all", "MMM-NetworkConnection", "MMM-ViewNotifications"],
       }
@@ -90,7 +90,7 @@ var config = {
     {
       module: 'MMM-page-indicator',
       position: 'bottom_bar',
-      classes: 'default Daniel Cret Oscar Woo_Young',
+      classes: 'default shared Daniel Cret Oscar Woo_Young',
       config: {
           pages: 4,
       }

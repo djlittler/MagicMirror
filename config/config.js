@@ -65,7 +65,7 @@ var config = {
 		{
 			module: "compliments",
 			position: "lower_third",
-			classes: "everyone",
+			classes: "everyone"
 		},
 		{
 			module: "currentweather",
@@ -122,7 +122,6 @@ var config = {
             classes: "Daniel",
             config: {
             }
-            
         },
         {
             module: 'on-this-day',
@@ -170,7 +169,7 @@ var config = {
         {
 	        module: 'mm-hide-all',
 	        position: 'bottom_right'
-	        classes: "default",
+	        classes: "default"
         },
         {
             module: 'MMM-Face-Reco-DNN',

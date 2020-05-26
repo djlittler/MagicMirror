@@ -81,7 +81,7 @@ var config = {
       classes: 'default Daniel Cret Oscar Woo_Young',
       config: {
         modules: [
-					["newsfeed", "MMM-Spotify", "MMM-ViewNotifications"],
+					["newsfeed", "MMM-Spotify", "MMM-ViewNotifications", "MMM-SendNotificationButton"],
 					["weatherforecast", "calendar", "MMM-Pollen", "MMM-Todoist", "on -this-day"],
           ["compliments", "MMM-ISS", "MMM-ISS-Live"]],
         fixed: ["MMM-OnScreenMenu","clock", "currentweather", "MMM-page-indicator", "mm-hide-all", "MMM-NetworkConnection"],

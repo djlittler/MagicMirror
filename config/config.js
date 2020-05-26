@@ -117,6 +117,12 @@ var config = {
 			module: "MMM-Dynamic-Modules",
 		},
 		{
+      module: 'MMM-KeyBindings',
+      config: {
+        enableKeyboard: true
+      }
+    }
+		{
 			module: "alert",
 			classes: "default Daniel Cret Oscar Woo_Young"
 		},

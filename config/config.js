@@ -234,7 +234,7 @@ var config = {
       module: 'MMM-ViewNotifications',
       position: "top_left",
       header: "Notifications",
-			classes: "default Daniel"
+			classes: "default Daniel",
       config: {
         // See below for configurable options
       }

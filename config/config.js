@@ -149,7 +149,7 @@ var config = {
 		{
 			module: "currentweather",
 			position: "top_right",
-			classes: 'Daniel Cret Oscar Woo_Young',
+			classes: 'default Daniel Cret Oscar Woo_Young',
 			config: {
 				location: "London",
 				locationID: "2643743", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
@@ -160,7 +160,7 @@ var config = {
 			module: "weatherforecast",
 			position: "top_right",
 			header: "Weather Forecast",
-			classes: 'Daniel Cret Oscar Woo_Young',
+			classes: 'default Daniel Cret Oscar Woo_Young',
 			config: {
 				location: "London",
 				locationID: "2643743", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
@@ -211,7 +211,7 @@ var config = {
     },
 		{
 		  module: "MMM-Spotify",
-		  position: "bottom_right", // "bottom_bar" or "top_bar" for miniBar
+		  position: "top_right", // "bottom_bar" or "top_bar" for miniBar
 			classes: 'Daniel',
 		  config: {
 		    debug: false, // debug mode

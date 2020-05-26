@@ -126,13 +126,14 @@ var config = {
         {
             module: 'on-this-day',
             position: 'bottom_bar',
-            classes: "shared",
+            //classes: "shared",
             config: {
                 // see below for configurable options...
             }
         },
-       /* {
+       {
             module: 'MMM-pages',
+            classes: "default shared"
             config: {
                 modules:
                     [["MMM-Pollen" , "newsfeed"],
@@ -148,7 +149,7 @@ var config = {
             config: {
                 pages: 4,
             }
-        },*/
+        },
         {
 		    module: 'MMM-Cursor',
 		    config: {

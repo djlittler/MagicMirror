@@ -81,8 +81,8 @@ var config = {
       classes: 'default Daniel Cret Oscar Woo_Young',
       config: {
         modules: [
-					["newsfeed", , "on -this-day", "MMM-Spotify", "MMM-Todoist", "MMM-ViewNotifications"],
-					["weatherforecast", "calendar", "MMM-Pollen"],
+					["newsfeed", "MMM-Spotify", "MMM-ViewNotifications"],
+					["weatherforecast", "calendar", "MMM-Pollen", "MMM-Todoist", "on -this-day"],
           ["compliments", "MMM-ISS", "MMM-ISS-Live"]],
         fixed: ["MMM-OnScreenMenu","clock", "currentweather", "MMM-page-indicator", "mm-hide-all", "MMM-NetworkConnection"],
       }
@@ -236,13 +236,21 @@ var config = {
       module: 'MMM-ViewNotifications',
       position: "top_left",
       header: "Notifications",
-			classes: "Daniel",
+			classes: "default Daniel",
       config: {
         // See below for configurable options
 				excludeModules: ["clock"],
       }
     },
-
+		{
+			module: 'MMM-SendNotificationButton',
+			position: 'top_left',	// This can be any of the regions. Best results in left or right regions.
+			header: 'Send Notification', // This is optional
+			classes: 'default Daniel',
+			config: {
+				// See 'Configuration options' for more information.
+      }
+		},
 		//Not working
 		{
 			module: 'MMM-Todoist',

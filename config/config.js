@@ -119,6 +119,9 @@ var config = {
 		{
       module: 'MMM-KeyBindings',
       config: {
+			  evdev: {
+					enabled: false 
+				},
         enableKeyboard: true
       }
     }

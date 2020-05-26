@@ -148,7 +148,7 @@ var config = {
             module: "MMM-Pollen",
             position: "top_left",
             header: "Pollen Forecast",
-            classes: 'Daniel'
+            classes: 'Daniel',
             config: {
                 updateInterval: 3 * 60 * 60 * 1000, // every 3 hours
                 zip_code: "90210"
@@ -198,7 +198,7 @@ var config = {
                 // If extendDataset is true, you need to set the full path of the dataset
                 dataset: 'modules/MMM-Face-Reco-DNN/dataset/'
             }
-        }
+        },
 	]
 
 };

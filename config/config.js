@@ -131,9 +131,8 @@ var config = {
                 // see below for configurable options...
             }
         },
-        {
+       /* {
             module: 'MMM-pages',
-            classes: "shared",
             config: {
                 modules:
                     [["MMM-Pollen" , "newsfeed"],
@@ -149,7 +148,7 @@ var config = {
             config: {
                 pages: 4,
             }
-        },
+        },*/
         {
 		    module: 'MMM-Cursor',
 		    config: {

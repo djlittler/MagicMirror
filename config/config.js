@@ -37,23 +37,23 @@ var config = {
 	modules: [
 		{
 			module: "alert",
-			classes: "default"
+			classes: "default Daniel Cret Oscar Woo_Young"
 		},
 		{
 			module: "updatenotification",
 			position: "top_bar",
-			classes: 'shared'
+			classes: 'Daniel Cret Oscar Woo_Young'
 		},
 		{
 			module: "clock",
 			position: "top_left",
-			classes: 'default shared'
+			classes: 'default Daniel Cret Oscar Woo_Young'
 		},
 		{
 			module: "calendar",
 			header: "Holidays",
 			position: "top_left",
-			classes: 'shared',
+			classes: 'Daniel Cret Oscar Woo_Young',
 			config: {
 				calendars: [
 					{
@@ -65,12 +65,12 @@ var config = {
 		{
 			module: "compliments",
 			position: "lower_third",
-			classes: 'shared'
+			classes: 'Daniel Cret Oscar Woo_Young'
 		},
 		{
 			module: "currentweather",
 			position: "top_right",
-			classes: 'shared',
+			classes: 'Daniel Cret Oscar Woo_Young',
 			config: {
 				location: "London",
 				locationID: "2643743", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
@@ -81,7 +81,7 @@ var config = {
 			module: "weatherforecast",
 			position: "top_right",
 			header: "Weather Forecast",
-			classes: 'shared',
+			classes: 'Daniel Cret Oscar Woo_Young',
 			config: {
 				location: "London",
 				locationID: "2643743", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
@@ -91,7 +91,7 @@ var config = {
 		{
 			module: "newsfeed",
 			position: "bottom_bar",
-			classes: 'shared',
+			classes: 'Daniel Cret Oscar Woo_Young',
 			config: {
 				feeds: [
 					{
@@ -108,7 +108,7 @@ var config = {
 		{
             module: 'MMM-OnScreenMenu',
             position: 'bottom_right',
-            classes: 'shared',
+            classes: 'Daniel',
             /* Valid positions: 'top_right', 'top_left', 'bottom_right', 'bottom_left' */
             config: {
                 touchMode: true,
@@ -126,14 +126,14 @@ var config = {
         {
             module: 'on-this-day',
             position: 'bottom_bar',
-            //classes: "shared",
+            classes: "Daniel Cret Oscar Woo_Young",
             config: {
                 // see below for configurable options...
             }
         },
        {
             module: 'MMM-pages',
-            classes: 'default shared',
+            classes: 'default Daniel Cret Oscar Woo_Young',
             config: {
                 modules:
                     [["MMM-Pollen", "newsfeed", "calendar", "on -this-day", "currentweather"],
@@ -145,13 +145,14 @@ var config = {
         {
             module: 'MMM-page-indicator',
             position: 'bottom_bar',
-            classes: 'shared',
+            classes: 'Default Daniel Cret Oscar Woo_Young',
             config: {
                 pages: 4,
             }
         },
         {
 		    module: 'MMM-Cursor',
+		    classes: "default Daniel Cret Oscar Woo_Young",
 		    config: {
 			// See 'Configuration options' for more information.
 		    }
@@ -169,7 +170,7 @@ var config = {
         {
 	        module: 'mm-hide-all',
 	        position: 'bottom_right',
-	        classes: "default shared"
+	        classes: "default Daniel Cret Oscar Woo_Young"
         },
         {
             module: 'MMM-Face-Reco-DNN',

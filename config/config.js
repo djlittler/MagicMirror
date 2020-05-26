@@ -40,7 +40,7 @@ var config = {
       config: {
         // Logout 15 seconds after user was not detected any more
         // If they are detected within this period, the delay will start again
-        logoutDelay: 15000,
+        logoutDelay: 30000,
         // How often the recognition starts in milliseconds
         // With a Raspberry Pi 3+ it works well every 2 seconds
         checkInterval: 2000,
@@ -82,7 +82,7 @@ var config = {
       config: {
         modules: [
 					["newsfeed", "MMM-Spotify", "MMM-ViewNotifications", "MMM-SendNotificationButton"],
-					["weatherforecast", "calendar", "MMM-Pollen", "MMM-Todoist", "on -this-day"],
+					["weatherforecast", "calendar", "MMM-Pollen", "MMM-Todoist", "on -this-day", "MMM-AVStock"],
           ["compliments", "MMM-ISS", "MMM-ISS-Live"]],
         fixed: ["MMM-OnScreenMenu","clock", "currentweather", "MMM-page-indicator", "mm-hide-all", "MMM-NetworkConnection"],
       }
@@ -305,6 +305,25 @@ var config = {
 		    header: "",                    // Any text you want. useHeader must be true
 		    updateInterval: 5 * 60 * 1000,
 			 }
+		},
+		{
+		  module: "MMM-AVStock",
+		  position: "top_right", //"bottom_bar" is better for `mode:ticker`
+			classes: "Daniel Woo_Young Oscar",
+		  config: {
+		    apiKey : "13HOT9JACUC6FFRI", // https://www.alphavantage.co/
+		    timeFormat: "YYYY-MM-DD HH:mm:ss",
+		    symbols : ["aapl", "GOOGL", "005930.KS"],
+		    alias: ["APPLE", "", "SAMSUNG Electronics"], //Easy name of each symbol. When you use `alias`, the number of symbols and alias should be the same. If value is null or "", symbol string will be used by default.
+		    tickerDuration: 60, // Ticker will be cycled once per this second.
+		    chartDays: 90, //For `mode:series`, how much daily data will be taken. (max. 90)
+		    poolInterval : 1000*15, // (Changed in ver 1.1.0) - Only For Premium Account
+		    mode : "table", // "table", "ticker", "series"
+		    decimals: 4, // number o decimals for all values including decimals (prices, price changes, change%...)
+		    candleSticks : false, //show candle sticks if mode is Series
+		    coloredCandles : false, //colored bars: red and green for negative and positive candles
+		    premiumAccount: false, // To change poolInterval, set this to true - Only For Premium Account
+		  }
 		},
 	]
 };

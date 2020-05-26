@@ -212,7 +212,7 @@ var config = {
 		{
 		  module: "MMM-Spotify",
 		  position: "bottom_left", // "bottom_bar" or "top_bar" for miniBar
-			classes: 'Daniel',
+			classes: 'default Daniel',
 		  config: {
 		    debug: false, // debug mode
 		    style: "default", // "default" or "mini" available (inactive for miniBar)

@@ -81,10 +81,10 @@ var config = {
       classes: 'default Daniel Cret Oscar Woo_Young',
       config: {
         modules: [
-					["MMM-Pollen", "newsfeed", "calendar", "on -this-day", "currentweather"],
+					["MMM-Pollen", "newsfeed", "calendar", "on -this-day", "currentweather", "MMM-Spotify"],
 					["weatherforecast"],
           ["compliments"]],
-        fixed: ["MMM-OnScreenMenu","clock", "currentweather", "MMM-page-indicator", "mm-hide-all", "MMM-NetworkConnection"],
+        fixed: ["MMM-OnScreenMenu","clock", "currentweather", "MMM-page-indicator", "mm-hide-all", "MMM-NetworkConnection", "MMM-ViewNotifications"],
       }
     },
     {
@@ -209,6 +209,35 @@ var config = {
         zip_code: "90210"
       }
     },
+		{
+		  module: "MMM-Spotify",
+		  position: "bottom_left", // "bottom_bar" or "top_bar" for miniBar
+			classes: 'Daniel',
+		  config: {
+		    debug: false, // debug mode
+		    style: "default", // "default" or "mini" available (inactive for miniBar)
+		    control: "default",
+		    accountDefault: 0, // default account number, attention : 0 is the first account
+		    updateInterval: 1000,
+		    onStart: null, // disable onStart feature with `null`
+		    deviceDisplay: "Listening on", // text to display in the device block (default style only)
+		    allowDevices: [], //If you want to limit devices to display info, use this.
+		    // allowDevices: ["RASPOTIFY", "My iPhoneX", "My Home speaker"],
+		    miniBarConfig: {
+		      album: true, // display Album name in miniBar style
+		      scroll: true, // scroll title / artist / album in miniBar style
+		      logo: true, // display Spotify logo in miniBar style
+		    }
+		  }
+		},
+    {
+      module: 'MMM-ViewNotifications',
+      position: "top_left",
+      header: "Notifications",
+      config: {
+        // See below for configurable options
+      }
+    }
 	]
 };
 

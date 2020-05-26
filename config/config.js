@@ -133,7 +133,7 @@ var config = {
         },
        {
             module: 'MMM-pages',
-            classes: "default shared",
+            classes: "default shared Daniel",
             config: {
                 modules:
                     [["MMM-Pollen" , "newsfeed"],
@@ -145,7 +145,7 @@ var config = {
         {
             module: 'MMM-page-indicator',
             position: 'bottom_bar',
-            classes: "shared",
+            classes: "shared Daniel",
             config: {
                 pages: 4,
             }

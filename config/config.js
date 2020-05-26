@@ -125,8 +125,8 @@ var config = {
             module: 'MMM-pages',
             config: {
                 modules:
-                    [[ "weatherforecast", "newsfeed"],
-                     ["MMM-Pollen"],
+                    [["MMM-Pollen" , "newsfeed"],
+                     ["weatherforecast"],
                      [ "calendar", "compliments", "on -this-day" ]],
                 fixed: ["MMM-OnScreenMenu","clock", "currentweather", "MMM-page-indicator", "mm-hide-all", "MMM-NetworkConnection"],
             }
@@ -148,6 +148,7 @@ var config = {
             module: "MMM-Pollen",
             position: "top_left",
             header: "Pollen Forecast",
+            classes: 'Daniel'
             config: {
                 updateInterval: 3 * 60 * 60 * 1000, // every 3 hours
                 zip_code: "90210"
@@ -157,6 +158,47 @@ var config = {
 	        module: 'mm-hide-all',
 	        position: 'bottom_right'
         },
+        {
+            module: 'MMM-Face-Reco-DNN',
+            config: {
+                // Logout 15 seconds after user was not detected any more
+                // If they are detected within this period, the delay will start again
+                logoutDelay: 15000,
+                // How often the recognition starts in milliseconds
+                // With a Raspberry Pi 3+ it works well every 2 seconds
+                checkInterval: 2000,
+                // Module set used for strangers or if no user is detected
+                defaultClass: 'default',
+                // Set of modules which should be shown for every recognised user
+                everyoneClass: 'everyone',
+                // XML to recognize with haarcascade
+                cascade: 'modules/MMM-Face-Reco-DNN/tools/haarcascade_frontalface_default.xml',
+                // Pre-encoded pickle with the faces
+                encodings: 'modules/MMM-Face-Reco-DNN/tools/encodings.pickle',
+                // Use Raspberry Pi camera or another type
+                // 1 = RasPi camera, 0 = other camera
+                usePiCamera: 1,
+                // Method of facial recognition
+                // dnn = deep neural network, haar = haarcascade
+                method: 'dnn',
+                // Which face detection model to use
+                // "hog" is less accurate but faster on CPUs
+                // "cnn" is a more accurate deep-learning model which is GPU/CUDA accelerated
+                detectionMethod: 'hog',
+                // How long in milliseconds modules take to hide and show
+                animationSpeed: 0,
+                // Path to Python to run the face recognition
+                // null or '' means default path
+                pythonPath: null,
+                // Should a welcome message be shown using the MagicMirror alerts module?
+                welcomeMessage: true,
+                // Capture new pictures of recognized people, if unknown we save it in folder "unknown"
+                // So you can extend your dataset and retrain it afterwards for better recognitions
+                extendDataset: false,
+                // If extendDataset is true, you need to set the full path of the dataset
+                dataset: 'modules/MMM-Face-Reco-DNN/dataset/'
+            }
+        }
 	]
 
 };

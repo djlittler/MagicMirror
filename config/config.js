@@ -168,7 +168,7 @@ var config = {
         },
         {
 	        module: 'mm-hide-all',
-	        position: 'bottom_right'
+	        position: 'bottom_right',
 	        classes: "default"
         },
         {

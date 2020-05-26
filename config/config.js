@@ -186,7 +186,7 @@ var config = {
 		},
     {
       module: 'MMM-NetworkConnection',
-      position: 'top_right',
+      position: 'top_bar',
       classes: 'Daniel',
       config: {
       }
@@ -237,7 +237,21 @@ var config = {
       config: {
         // See below for configurable options
       }
-    }
+    },
+		{
+			module: 'MMM-Todoist',
+			position: 'top_right',	// This can be any of the regions. Best results in left or right regions.
+			header: 'Todoist', // This is optional
+			config: { // See 'Configuration options' for more information.
+				accessToken: '60c3b3ee4c855567f5617b9c22b77455b631367d',
+				maximumEntries: 60,
+				updateInterval: 10*60*1000, // Update every 10 minutes
+				fade: false,
+				// projects and/or labels is mandatory:
+				projects: [ Magic Mirror ],
+				labels: [ "MagicMirror", "Important" ] // Tasks for any projects with these labels will be shown.
+      }
+		}
 	]
 };
 

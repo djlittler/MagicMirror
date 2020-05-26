@@ -42,18 +42,18 @@ var config = {
 		{
 			module: "updatenotification",
 			position: "top_bar",
-			classes: "shared"
+			classes: 'shared'
 		},
 		{
 			module: "clock",
 			position: "top_left",
-			classes: "default shared"
+			classes: 'default shared'
 		},
 		{
 			module: "calendar",
 			header: "Holidays",
 			position: "top_left",
-			classes: "shared",
+			classes: 'shared',
 			config: {
 				calendars: [
 					{
@@ -65,12 +65,12 @@ var config = {
 		{
 			module: "compliments",
 			position: "lower_third",
-			classes: "shared"
+			classes: 'shared'
 		},
 		{
 			module: "currentweather",
 			position: "top_right",
-			classes: "shared",
+			classes: 'shared',
 			config: {
 				location: "London",
 				locationID: "2643743", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
@@ -81,7 +81,7 @@ var config = {
 			module: "weatherforecast",
 			position: "top_right",
 			header: "Weather Forecast",
-			classes: "shared",
+			classes: 'shared',
 			config: {
 				location: "London",
 				locationID: "2643743", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
@@ -91,7 +91,7 @@ var config = {
 		{
 			module: "newsfeed",
 			position: "bottom_bar",
-			classes: "shared",
+			classes: 'shared',
 			config: {
 				feeds: [
 					{
@@ -108,7 +108,7 @@ var config = {
 		{
             module: 'MMM-OnScreenMenu',
             position: 'bottom_right',
-            classes: "shared",
+            classes: 'shared',
             /* Valid positions: 'top_right', 'top_left', 'bottom_right', 'bottom_left' */
             config: {
                 touchMode: true,
@@ -119,7 +119,7 @@ var config = {
         {
             module: 'MMM-NetworkConnection',
             position: 'top_right',
-            classes: "Daniel",
+            classes: 'Daniel',
             config: {
             }
         },
@@ -133,19 +133,19 @@ var config = {
         },
        {
             module: 'MMM-pages',
-            classes: "default shared Daniel",
+            classes: 'default shared',
             config: {
                 modules:
-                    [["MMM-Pollen" , "newsfeed"],
+                    [["MMM-Pollen", "newsfeed", "calendar", "on -this-day", "currentweather"],
                      ["weatherforecast"],
-                     [ "calendar", "compliments", "on -this-day" ]],
+                     ["compliments"]],
                 fixed: ["MMM-OnScreenMenu","clock", "currentweather", "MMM-page-indicator", "mm-hide-all", "MMM-NetworkConnection"],
             }
         },
         {
             module: 'MMM-page-indicator',
             position: 'bottom_bar',
-            classes: "shared",
+            classes: 'shared',
             config: {
                 pages: 4,
             }

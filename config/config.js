@@ -90,7 +90,7 @@ var config = {
     {
       module: 'MMM-page-indicator',
       position: 'bottom_bar',
-      classes: 'Daniel Cret Oscar Woo_Young',
+      classes: 'default Daniel Cret Oscar Woo_Young',
       config: {
           pages: 4,
       }
@@ -211,7 +211,7 @@ var config = {
     },
 		{
 		  module: "MMM-Spotify",
-		  position: "bottom_left", // "bottom_bar" or "top_bar" for miniBar
+		  position: "bottom_right", // "bottom_bar" or "top_bar" for miniBar
 			classes: 'default Daniel',
 		  config: {
 		    debug: false, // debug mode

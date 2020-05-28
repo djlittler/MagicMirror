@@ -82,7 +82,7 @@ var config = {
       config: {
         modules: [
 					["newsfeed", "MMM-Spotify", "MMM-ViewNotifications", "MMM-SendNotificationButton"],
-					["weatherforecast", "calendar", "MMM-Pollen", "MMM-Todoist", "on -this-day", "MMM-AVStock"],
+					["weatherforecast", "calendar", "MMM-Pollen", "MMM-Todoist", "on -this-day", "MMM-AVStock", "MMM-CoinMarketCap"],
           ["compliments", "MMM-ISS", "MMM-ISS-Live"]],
         fixed: ["MMM-OnScreenMenu","clock", "currentweather", "MMM-page-indicator", "mm-hide-all", "MMM-NetworkConnection"],
       }
@@ -275,7 +275,7 @@ var config = {
 				updateInterval: 10*60*1000, // Update every 10 minutes
 				fade: false,
 				// projects and/or labels is mandatory:
-				projects: [ "Magic Mirror" ],
+				projects: ["Magic Mirror"],
 				//labels: [ "Magic Mirror", "Important" ] // Tasks for any projects with these labels will be shown.
       }
 		},
@@ -309,7 +309,7 @@ var config = {
 		{
 		  module: "MMM-AVStock",
 		  position: "top_right", //"bottom_bar" is better for `mode:ticker`
-			classes: "Daniel Woo_Young Oscar",
+			classes: "Daniel Woo_Young Oscar Cret",
 		  config: {
 		    apiKey : "13HOT9JACUC6FFRI", // https://www.alphavantage.co/
 		    timeFormat: "YYYY-MM-DD HH:mm:ss",
@@ -318,13 +318,27 @@ var config = {
 		    tickerDuration: 60, // Ticker will be cycled once per this second.
 		    chartDays: 90, //For `mode:series`, how much daily data will be taken. (max. 90)
 		    poolInterval : 1000*15, // (Changed in ver 1.1.0) - Only For Premium Account
-		    mode : "table", // "table", "ticker", "series"
+		    mode : "series", // "table", "ticker", "series"
 		    decimals: 4, // number o decimals for all values including decimals (prices, price changes, change%...)
 		    candleSticks : false, //show candle sticks if mode is Series
 		    coloredCandles : false, //colored bars: red and green for negative and positive candles
 		    premiumAccount: false, // To change poolInterval, set this to true - Only For Premium Account
 		  }
 		},
+		{
+      module: 'MMM-CoinMarketCap',
+      position: "top_right",
+      header: "Cryptocurrencies",
+			classes: 'Daniel Woo_Young',
+      config: {
+        apiKey: 'd7e684aa-9437-46a5-9c18-9ea27ad661ad',
+        currencies: ['bitcoin', 'ethereum', 'litecoin'],
+        view: 'graph',
+        conversion: 'GBP',
+        ...
+        // See below for more Configuration Options
+      }
+    },
 	]
 };
 

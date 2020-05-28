@@ -335,7 +335,6 @@ var config = {
         currencies: ['bitcoin', 'ethereum', 'litecoin'],
         view: 'graph',
         conversion: 'GBP',
-        ...
         // See below for more Configuration Options
       }
     },

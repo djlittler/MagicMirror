@@ -105,7 +105,7 @@ var config = {
 		{
       module: 'MMM-OnScreenMenu',
       position: 'bottom_right',
-      classes: 'Daniel',
+      classes: 'default Daniel',
       /* Valid positions: 'top_right', 'top_left', 'bottom_right', 'bottom_left' */
       config: {
         touchMode: true,
@@ -152,7 +152,7 @@ var config = {
 		{
 			module: "updatenotification",
 			position: "top_bar",
-			classes: 'Daniel Cret Oscar Woo_Young'
+			classes: 'default Daniel Cret Oscar Woo_Young'
 		},
 		{
 			module: "clock",
@@ -163,7 +163,7 @@ var config = {
 			module: "calendar",
 			header: "Holidays",
 			position: "top_left",
-			classes: 'Daniel Cret Oscar Woo_Young',
+			classes: 'default Daniel Cret Oscar Woo_Young',
 			config: {
 				calendars:[
 					{
@@ -176,7 +176,7 @@ var config = {
 		{
 			module: "compliments",
 			position: "lower_third",
-			classes: 'Daniel Cret Oscar Woo_Young'
+			classes: 'default Daniel Cret Oscar Woo_Young'
 		},
 		{
 			module: "currentweather",
@@ -202,7 +202,7 @@ var config = {
 		{
 			module: "newsfeed",
 			position: "bottom_bar",
-			classes: 'Daniel Cret Oscar Woo_Young',
+			classes: 'default Daniel Cret Oscar Woo_Young',
 			config: {
 				feeds: [
 					{
@@ -219,14 +219,14 @@ var config = {
     {
       module: 'MMM-NetworkConnection',
       position: 'top_bar',
-      classes: 'Daniel',
+      classes: 'default Daniel',
       config: {
       }
     },
     {
       module: 'on-this-day',
       position: 'bottom_bar',
-      classes: "Daniel Cret Oscar Woo_Young",
+      classes: "default Daniel Cret Oscar Woo_Young",
       config: {
         // see below for configurable options...
       }
@@ -235,7 +235,7 @@ var config = {
       module: "MMM-Pollen",
       position: "top_left",
       header: "Pollen Forecast",
-      classes: 'Daniel Cret',
+      classes: 'default Daniel Cret',
       config: {
         updateInterval: 3 * 60 * 60 * 1000, // every 3 hours
         zip_code: "90210"
@@ -288,7 +288,7 @@ var config = {
 			module: 'MMM-Todoist',
 			position: 'top_left',	// This can be any of the regions. Best results in left or right regions.
 			header: 'Todoist', // This is optional
-			classes: 'Daniel',
+			classes: 'default Daniel',
 			config: { // See 'Configuration options' for more information.
 				accessToken: '60c3b3ee4c855567f5617b9c22b77455b631367d',
 				maximumEntries: 60,
@@ -303,7 +303,7 @@ var config = {
 			disabled: false,
 			module: 'MMM-ISS-Live',
 			position: 'bottom_right',
-			classes: 'Daniel',
+			classes: 'default Daniel',
 			config: {
 		   useHeader: false,                // true if you want a header
 		   header: "ISS Feed",                      // Change in config file. useHeader must be true
@@ -314,7 +314,7 @@ var config = {
 			disabled: false,
 			module: 'MMM-ISS',
 			position: 'bottom_right',
-			classes: 'Daniel',
+			classes: 'default Daniel',
 			config: {
 			  country: "England",
 			  city: "London",
@@ -329,7 +329,7 @@ var config = {
 		{
 		  module: "MMM-AVStock",
 		  position: "top_right", //"bottom_bar" is better for `mode:ticker`
-			classes: "Daniel Woo_Young Oscar Cret",
+			classes: "default Daniel Woo_Young Oscar Cret",
 		  config: {
 		    apiKey : "13HOT9JACUC6FFRI", // https://www.alphavantage.co/
 		    timeFormat: "YYYY-MM-DD HH:mm:ss",
@@ -349,7 +349,7 @@ var config = {
       module: 'MMM-CoinMarketCap',
       position: "top_right",
       header: "Cryptocurrencies",
-			classes: 'Daniel Woo_Young',
+			classes: 'default Daniel Woo_Young',
       config: {
         apiKey: 'd7e684aa-9437-46a5-9c18-9ea27ad661ad',
         currencies: ['bitcoin', 'ethereum', 'litecoin'],
@@ -362,7 +362,7 @@ var config = {
 		disabled: false,
 		module: 'MMM-EventHorizon',
 		position: 'bottom_center',
-		classes: "Daniel Woo_Young Oscar Cret",
+		classes: "default Daniel Woo_Young Oscar Cret",
 		config: {
 		    timezone: "n136",                     // See Timezone chart at bottom
 		    units: "1",          // 1=no units, 2=units initial only, 3=units abbr singular, 4= units abbr plural, 5= units full name

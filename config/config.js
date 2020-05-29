@@ -121,7 +121,7 @@ var config = {
 							{from: '0 6 * * *', to: '0 10 * * *', dimLevel: '40', ignoreModules: ['clock', 'calendar'], groupClass: 'morning_interface'},
 							{from: '0 10 * * *', to: '30 17 * * *', ignoreModules: ['clock', 'calendar'], groupClass: 'day_interface'},
 							{from: '30 17 * * *', to: '0 0 * * *', ignoreModules: ['clock', 'calendar'], groupClass: 'night_interface'},
-							{from: '0 0 * * *', to: '0 6 * * *', ignoreModules: ['clock', 'calendar'], groupClass: 'midnight_interface'}
+							{from: '0 0 * * *', to: '0 6 * * *', ignoreModules: ['clock', 'calendar'], groupClass: 'midnight_interface'}],
             // SHOW AN ALERT AT 09:30 EVERY DAY (see https://github.com/MichMich/MagicMirror/tree/develop/modules/default/alert)
             notification_schedule: {
                 notification: 'SHOW_ALERT',
@@ -362,6 +362,7 @@ var config = {
 		disabled: false,
 		module: 'MMM-EventHorizon',
 		position: 'bottom_center',
+		classes: "Daniel Woo_Young Oscar Cret",
 		config: {
 		    timezone: "n136",                     // See Timezone chart at bottom
 		    units: "1",          // 1=no units, 2=units initial only, 3=units abbr singular, 4= units abbr plural, 5= units full name

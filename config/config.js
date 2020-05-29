@@ -114,6 +114,26 @@ var config = {
       }
     },
 		{
+        module: 'MMM-ModuleScheduler',
+        config: {
+					  // SHOW ALL MODULES AT 06:00 AND DIM THEM TO 40% AT 22:00
+            global_schedule: [
+							{from: '0 6 * * *', to: '0 10 * * *', dimLevel: '40', ignoreModules: ['clock', 'calendar'], groupClass: 'morning_interface'},
+							{from: '0 10 * * *', to: '30 17 * * *', ignoreModules: ['clock', 'calendar'], groupClass: 'day_interface'},
+							{from: '30 17 * * *', to: '0 0 * * *', ignoreModules: ['clock', 'calendar'], groupClass: 'night_interface'},
+							{from: '0 0 * * *', to: '0 6 * * *', ignoreModules: ['clock', 'calendar'], groupClass: 'midnight_interface'}
+            // SHOW AN ALERT AT 09:30 EVERY DAY (see https://github.com/MichMich/MagicMirror/tree/develop/modules/default/alert)
+            notification_schedule: {
+                notification: 'SHOW_ALERT',
+                schedule: '30 9 * * *',
+                payload: {
+                    type: "notification",
+                    title: 'Scheduled alert!'
+                }
+            }
+        }
+    },
+		{
 			module: "MMM-Dynamic-Modules",
 		},
 		{
@@ -338,6 +358,31 @@ var config = {
         // See below for more Configuration Options
       }
     },
+		{
+		disabled: false,
+		module: 'MMM-EventHorizon',
+		position: 'bottom_center',
+		config: {
+		    timezone: "n136",                     // See Timezone chart at bottom
+		    units: "1",          // 1=no units, 2=units initial only, 3=units abbr singular, 4= units abbr plural, 5= units full name
+		    justDays: "",                         //  yes or no // For longer countdowns. Displays ONLY days remaining
+		    size: "large",                        // small, medium or large
+		    countUp: "yes",                       // Count up after timer ends
+		    date: "2019-07-04",                   // YYYY-MM-DD format ONLY
+		    time: "00:00:01",                     // (HH:MM:SS)    Exact time you want timer to end
+		    text1: "Describe event",              // 2 lines of text during timer
+		    text2: "And here too!",               // 2 lines of text during timer
+		    text1Color: "FFFFFF",                 // Hex color codes
+		    text2Color: "62FF00",                 // Hex color codes
+		    timerColor: "FFFFFF",                 // Hex color codes
+		    endText1: "When timer ends",          // 2 lines of text when timer ends
+		    endText2: "Say something here",       // 2 lines of text when timer ends
+		    endText1Color: "FFFFFF",              // Hex color codes
+		    endText2Color: "62FF00",              // Hex color codes
+		    timerUpColor: "FFFFFF",               // Hex color codes
+		    colorpc: "000",                       // color of the background 000 = black, t = transparent
+		  }
+		},
 	]
 };
 

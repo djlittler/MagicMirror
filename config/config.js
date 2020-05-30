@@ -173,10 +173,10 @@ var config = {
 		//Module: Screencast
 		{
 			module: 'MMM-Screencast',
-			position: 'bottom_left', // This position is for a hidden <div /> and not the screencast window
+			position: 'bottom_right', // This position is for a hidden <div /> and not the screencast window
 			classes: 'default Daniel Cret Oscar Woo_Young',
 			config: {
-				position: 'bottomRight',
+				position: 'bottomLeft',
 				height: 300,
 				width: 500,
 				castName: 'Magic Mirror',

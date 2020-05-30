@@ -86,7 +86,7 @@ var config = {
 					//Page 2: Daily Brief
 					["currentweather", "weatherforecast", "MMM-Pollen", "MMM-AVStock", "MMM-CoinMarketCap", "newsfeed"],
 					//Page 3: Scheduler
-          ["calendar", "holidays", "MMM-Todoist", "MMM-EventHorizon"],
+          ["calendar", "holidays", "MMM-Todoist", "MMM-EventHorizon", "MMM-CountUP"],
 					//Page 4: For You
 					["MMM-ISS", "MMM-ISS-Live", "on-this-day"],
 					//Page 5: Work/Dump
@@ -372,7 +372,7 @@ var config = {
 
 
 	//Bottom
-		//Module: On This Day (Bottom)
+		//Module: On This Day
     {
       module: 'on-this-day',
       position: 'bottom_bar',
@@ -381,6 +381,7 @@ var config = {
         // see below for configurable options...
       }
     },
+		//Module: CountUp
 		{
 	    module: "MMM-CountUP",
 			position: 'bottom_bar',

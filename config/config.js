@@ -384,7 +384,7 @@ var config = {
 		//Module: CountUp
 		{
 	    module: "MMM-CountUP",
-			position: 'bottom_bar',
+			position: 'bottom_center',
       classes: "default Daniel Cret Oscar Woo_Young",
 	    config: {
 	      header: 'Quit Smoking',

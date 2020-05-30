@@ -341,33 +341,6 @@ var config = {
 
 
 	//Top
-		//Module: Countdown
-		{
-		disabled: false,
-		module: 'MMM-EventHorizon',
-		position: 'top_center',
-		classes: "default Daniel Woo_Young Oscar Cret",
-		config: {
-		    timezone: "n136",                     // See Timezone chart at bottom
-		    units: "1",          // 1=no units, 2=units initial only, 3=units abbr singular, 4= units abbr plural, 5= units full name
-		    justDays: "",                         //  yes or no // For longer countdowns. Displays ONLY days remaining
-		    size: "large",                        // small, medium or large
-		    countUp: "yes",                       // Count up after timer ends
-		    date: "2019-07-04",                   // YYYY-MM-DD format ONLY
-		    time: "00:00:01",                     // (HH:MM:SS)    Exact time you want timer to end
-		    text1: "Describe event",              // 2 lines of text during timer
-		    text2: "And here too!",               // 2 lines of text during timer
-		    text1Color: "FFFFFF",                 // Hex color codes
-		    text2Color: "62FF00",                 // Hex color codes
-		    timerColor: "FFFFFF",                 // Hex color codes
-		    endText1: "When timer ends",          // 2 lines of text when timer ends
-		    endText2: "Say something here",       // 2 lines of text when timer ends
-		    endText1Color: "FFFFFF",              // Hex color codes
-		    endText2Color: "62FF00",              // Hex color codes
-		    timerUpColor: "FFFFFF",               // Hex color codes
-		    colorpc: "000",                       // color of the background 000 = black, t = transparent
-		  }
-		},
 
 
 
@@ -388,7 +361,8 @@ var config = {
       classes: "default Daniel Cret Oscar Woo_Young",
 	    config: {
 	      header: 'Quit Smoking',
-	      date: '2020-02-08',
+	      //date: '2020-02-08',
+				date: '2020-12-01',
 	      time: '00:00:00'
 	    }
   	},
@@ -491,7 +465,33 @@ var config = {
 			position: "lower_third",
 			classes: 'default Daniel Cret Oscar Woo_Young'
 		},
-
+		//Module: Countdown
+		{
+		disabled: false,
+		module: 'MMM-EventHorizon',
+		position: 'top_center',
+		classes: "default Daniel Woo_Young Oscar Cret",
+		config: {
+		    timezone: "n136",                     // See Timezone chart at bottom
+		    units: "1",          // 1=no units, 2=units initial only, 3=units abbr singular, 4= units abbr plural, 5= units full name
+		    justDays: "",                         //  yes or no // For longer countdowns. Displays ONLY days remaining
+		    size: "large",                        // small, medium or large
+		    countUp: "yes",                       // Count up after timer ends
+		    date: "2019-07-04",                   // YYYY-MM-DD format ONLY
+		    time: "00:00:01",                     // (HH:MM:SS)    Exact time you want timer to end
+		    text1: "Describe event",              // 2 lines of text during timer
+		    text2: "And here too!",               // 2 lines of text during timer
+		    text1Color: "FFFFFF",                 // Hex color codes
+		    text2Color: "62FF00",                 // Hex color codes
+		    timerColor: "FFFFFF",                 // Hex color codes
+		    endText1: "When timer ends",          // 2 lines of text when timer ends
+		    endText2: "Say something here",       // 2 lines of text when timer ends
+		    endText1Color: "FFFFFF",              // Hex color codes
+		    endText2Color: "62FF00",              // Hex color codes
+		    timerUpColor: "FFFFFF",               // Hex color codes
+		    colorpc: "000",                       // color of the background 000 = black, t = transparent
+		  }
+		},
 
 
 		//Global Bottom

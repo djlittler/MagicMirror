@@ -81,10 +81,19 @@ var config = {
       classes: 'default Daniel Cret Oscar Woo_Young',
       config: {
         modules: [
-					["newsfeed", "MMM-Spotify", "MMM-ViewNotifications", "MMM-SendNotificationButton"],
-					["weatherforecast", "calendar", "MMM-Pollen", "MMM-Todoist", "on -this-day", "MMM-AVStock", "MMM-CoinMarketCap"],
-          ["compliments", "MMM-ISS", "MMM-ISS-Live"]],
-        fixed: ["MMM-OnScreenMenu","clock", "currentweather", "MMM-page-indicator", "mm-hide-all", "MMM-NetworkConnection"],
+					//Page 1: Homepage
+					["MMM-Screencast", "MMM-Spotify"],
+					//Page 2: Daily Brief
+					["currentweather", "weatherforecast", "MMM-Pollen", "MMM-AVStock", "MMM-CoinMarketCap", "newsfeed"],
+					//Page 3: Scheduler
+          ["calendar", "holidays", "MMM-Todoist", "MMM-EventHorizon"],
+					//Page 4: For You
+					["MMM-ISS", "MMM-ISS-Live", "on-this-day"],
+					//Page 5: Work/Dump
+					["compliments"],
+					//Page 6: Settings
+					["MMM-SendNotificationButton", "MMM-ViewNotifications", "MMM-NetworkConnection"]]
+        fixed: ["MMM-OnScreenMenu","clock", "MMM-page-indicator", "mm-hide-all"],
       }
     },
     {
@@ -92,7 +101,7 @@ var config = {
       position: 'bottom_bar',
       classes: 'default shared Daniel Cret Oscar Woo_Young',
       config: {
-          pages: 4,
+          pages: 5,
       }
     },
     {
@@ -159,88 +168,21 @@ var config = {
 			position: "top_left",
 			classes: 'default Daniel Cret Oscar Woo_Young'
 		},
+
+//Page: Homepage
+		//Module: Screencast
 		{
-			module: "calendar",
-			header: "Holidays",
-			position: "top_left",
+			module: 'MMM-Screencast',
+			position: 'bottom_left', // This position is for a hidden <div /> and not the screencast window
 			classes: 'default Daniel Cret Oscar Woo_Young',
 			config: {
-				calendars:[
-					{
-						symbol: "calendar-check",
-						url: "webcal://www.calendarlabs.com/ical-calendar/ics/76/US_Holidays.ics"
-					}
-				]
+				position: 'bottomRight',
+				height: 300,
+				width: 500,
+				castName: 'Magic Mirror',
 			}
-		},
-		{
-			module: "compliments",
-			position: "lower_third",
-			classes: 'default Daniel Cret Oscar Woo_Young'
-		},
-		{
-			module: "currentweather",
-			position: "top_right",
-			classes: 'default Daniel Cret Oscar Woo_Young',
-			config: {
-				location: "London",
-				locationID: "2643743", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
-				appid: "95bcc2e45fcf190858c5273b37e604f0"
-			}
-		},
-		{
-			module: "weatherforecast",
-			position: "top_right",
-			header: "Weather Forecast",
-			classes: 'default Daniel Cret Oscar Woo_Young',
-			config: {
-				location: "London",
-				locationID: "2643743", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
-				appid: "95bcc2e45fcf190858c5273b37e604f0"
-			}
-		},
-		{
-			module: "newsfeed",
-			position: "bottom_bar",
-			classes: 'default Daniel Cret Oscar Woo_Young',
-			config: {
-				feeds: [
-					{
-						title: "New York Times",
-						url: "http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml"
-					}
-				],
-				showSourceTitle: true,
-				showPublishDate: true,
-				broadcastNewsFeeds: true,
-				broadcastNewsUpdates: true
-			}
-		},
-    {
-      module: 'MMM-NetworkConnection',
-      position: 'top_bar',
-      classes: 'default Daniel',
-      config: {
-      }
     },
-    {
-      module: 'on-this-day',
-      position: 'bottom_bar',
-      classes: "default Daniel Cret Oscar Woo_Young",
-      config: {
-        // see below for configurable options...
-      }
-    },
-  	{
-      module: "MMM-Pollen",
-      position: "top_left",
-      header: "Pollen Forecast",
-      classes: 'default Daniel Cret',
-      config: {
-        updateInterval: 3 * 60 * 60 * 1000, // every 3 hours
-        zip_code: "90210"
-      }
-    },
+		//Module: Spotify
 		{
 		  module: "MMM-Spotify",
 		  position: "bottom_right", // "bottom_bar" or "top_bar" for miniBar
@@ -263,30 +205,128 @@ var config = {
 		  }
 		},
 
-		//Development
-    {
-      module: 'MMM-ViewNotifications',
+
+//Page: Daily Brief
+	//Section: Weather
+		//Module: Current Forecast
+		{
+			module: "currentweather",
+			position: "top_left",
+			classes: 'default Daniel Cret Oscar Woo_Young',
+			config: {
+				location: "London",
+				locationID: "2643743", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
+				appid: "95bcc2e45fcf190858c5273b37e604f0"
+			}
+		},
+		//Module: 7 Day Forecast
+		{
+			module: "weatherforecast",
+			position: "top_left",
+			header: "Weather Forecast",
+			classes: 'default Daniel Cret Oscar Woo_Young',
+			config: {
+				location: "London",
+				locationID: "2643743", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
+				appid: "95bcc2e45fcf190858c5273b37e604f0"
+			}
+		},
+		//Module: Pollen Count
+  	{
+      module: "MMM-Pollen",
       position: "top_left",
-      header: "Notifications",
-			classes: "default Daniel",
+      header: "Pollen Forecast",
+      classes: 'default Daniel Cret',
       config: {
-        // See below for configurable options
-				excludeModules: ["clock"],
+        updateInterval: 3 * 60 * 60 * 1000, // every 3 hours
+        zip_code: "90210"
       }
     },
+
+
+	//Section: Finance
+		//Module: Stock
 		{
-			module: 'MMM-SendNotificationButton',
-			position: 'top_left',	// This can be any of the regions. Best results in left or right regions.
-			header: 'Send Notification', // This is optional
-			classes: 'default Daniel',
-			config: {
-				// See 'Configuration options' for more information.
-      }
+		  module: "MMM-AVStock",
+		  position: "top_right", //"bottom_bar" is better for `mode:ticker`
+			classes: "default Daniel Woo_Young Oscar Cret",
+		  config: {
+		    apiKey : "13HOT9JACUC6FFRI", // https://www.alphavantage.co/
+		    timeFormat: "YYYY-MM-DD HH:mm:ss",
+		    symbols : ["aapl", "GOOGL", "005930.KS"],
+		    alias: ["APPLE", "", "SAMSUNG Electronics"], //Easy name of each symbol. When you use `alias`, the number of symbols and alias should be the same. If value is null or "", symbol string will be used by default.
+		    tickerDuration: 60, // Ticker will be cycled once per this second.
+		    chartDays: 90, //For `mode:series`, how much daily data will be taken. (max. 90)
+		    poolInterval : 1000*15, // (Changed in ver 1.1.0) - Only For Premium Account
+		    mode : "series", // "table", "ticker", "series"
+		    decimals: 4, // number o decimals for all values including decimals (prices, price changes, change%...)
+		    candleSticks : false, //show candle sticks if mode is Series
+		    coloredCandles : false, //colored bars: red and green for negative and positive candles
+		    premiumAccount: false, // To change poolInterval, set this to true - Only For Premium Account
+		  }
 		},
-		//Not working
+		//Crypto Module
+		{
+      module: 'MMM-CoinMarketCap',
+      position: "top_right",
+      header: "Cryptocurrencies",
+			classes: 'default Daniel Woo_Young',
+      config: {
+        apiKey: 'd7e684aa-9437-46a5-9c18-9ea27ad661ad',
+        currencies: ['bitcoin', 'ethereum', 'litecoin'],
+        view: 'graph',
+        conversion: 'GBP',
+        // See below for more Configuration Options
+      }
+    },
+
+	//Section: News Ticker (Bottom)
+		//Module: Newsfeed
+		{
+			module: "newsfeed",
+			position: "bottom_bar",
+			classes: 'default Daniel Cret Oscar Woo_Young',
+			config: {
+				feeds: [
+					{
+						title: "New York Times",
+						url: "http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml"
+					}
+				],
+				showSourceTitle: true,
+				showPublishDate: true,
+				broadcastNewsFeeds: true,
+				broadcastNewsUpdates: true
+			}
+		},
+
+
+
+
+
+//Page 3: Scheduler
+	//Section Left: Calendas & Planners
+		//Module: US Holiday **CHANGE**
+		{
+			module: "calendar",
+			header: "Holidays",
+			position: "top_left",
+			classes: 'default Daniel Cret Oscar Woo_Young',
+			config: {
+				calendars:[
+					{
+						symbol: "calendar-check",
+						url: "webcal://www.calendarlabs.com/ical-calendar/ics/76/US_Holidays.ics"
+					}
+				]
+			}
+		},
+		//Module: Personal Schedule **ADD**
+
+	//Section: To Do + Habits
 		{
 			module: 'MMM-Todoist',
-			position: 'top_left',	// This can be any of the regions. Best results in left or right regions.
+			position: 'top_right',	// This can be any of the regions. Best results in left or right regions.
 			header: 'Todoist', // This is optional
 			classes: 'default Daniel',
 			config: { // See 'Configuration options' for more information.
@@ -299,6 +339,85 @@ var config = {
 				//labels: [ "Magic Mirror", "Important" ] // Tasks for any projects with these labels will be shown.
       }
 		},
+	//Section: Headers & Footers
+		//Module: Countdown
+		{
+		disabled: false,
+		module: 'MMM-EventHorizon',
+		position: 'top_center',
+		classes: "default Daniel Woo_Young Oscar Cret",
+		config: {
+		    timezone: "n136",                     // See Timezone chart at bottom
+		    units: "1",          // 1=no units, 2=units initial only, 3=units abbr singular, 4= units abbr plural, 5= units full name
+		    justDays: "",                         //  yes or no // For longer countdowns. Displays ONLY days remaining
+		    size: "large",                        // small, medium or large
+		    countUp: "yes",                       // Count up after timer ends
+		    date: "2019-07-04",                   // YYYY-MM-DD format ONLY
+		    time: "00:00:01",                     // (HH:MM:SS)    Exact time you want timer to end
+		    text1: "Describe event",              // 2 lines of text during timer
+		    text2: "And here too!",               // 2 lines of text during timer
+		    text1Color: "FFFFFF",                 // Hex color codes
+		    text2Color: "62FF00",                 // Hex color codes
+		    timerColor: "FFFFFF",                 // Hex color codes
+		    endText1: "When timer ends",          // 2 lines of text when timer ends
+		    endText2: "Say something here",       // 2 lines of text when timer ends
+		    endText1Color: "FFFFFF",              // Hex color codes
+		    endText2Color: "62FF00",              // Hex color codes
+		    timerUpColor: "FFFFFF",               // Hex color codes
+		    colorpc: "000",                       // color of the background 000 = black, t = transparent
+		  }
+		},
+		//Module: On This Day (Bottom)
+    {
+      module: 'on-this-day',
+      position: 'bottom_bar',
+      classes: "default Daniel Cret Oscar Woo_Young",
+      config: {
+        // see below for configurable options...
+      }
+    },
+
+
+
+
+
+//Page: Settings
+	//Section: Network (Top)
+		//Module: Network Connection Status
+    {
+      module: 'MMM-NetworkConnection',
+      position: 'top_bar',
+      classes: 'default Daniel',
+      config: {
+      }
+    },
+		//Module: Wifi Symbol **ADD**
+
+	//Section: Notifications (Left)
+		//Module: View Notifications
+    {
+      module: 'MMM-ViewNotifications',
+      position: "top_left",
+      header: "Notifications",
+			classes: "default Daniel",
+      config: {
+        // See below for configurable options
+				excludeModules: ["clock"],
+      }
+    },
+		//Module: Send Notifications
+		{
+			module: 'MMM-SendNotificationButton',
+			position: 'top_left',	// This can be any of the regions. Best results in left or right regions.
+			header: 'Send Notification', // This is optional
+			classes: 'default Daniel',
+			config: {
+				// See 'Configuration options' for more information.
+      }
+		},
+		//Not working
+//Page: For you
+	//Section: Space
 		{
 			disabled: false,
 			module: 'MMM-ISS-Live',
@@ -326,63 +445,11 @@ var config = {
 		    updateInterval: 5 * 60 * 1000,
 			 }
 		},
+//Unused
 		{
-		  module: "MMM-AVStock",
-		  position: "top_right", //"bottom_bar" is better for `mode:ticker`
-			classes: "default Daniel Woo_Young Oscar Cret",
-		  config: {
-		    apiKey : "13HOT9JACUC6FFRI", // https://www.alphavantage.co/
-		    timeFormat: "YYYY-MM-DD HH:mm:ss",
-		    symbols : ["aapl", "GOOGL", "005930.KS"],
-		    alias: ["APPLE", "", "SAMSUNG Electronics"], //Easy name of each symbol. When you use `alias`, the number of symbols and alias should be the same. If value is null or "", symbol string will be used by default.
-		    tickerDuration: 60, // Ticker will be cycled once per this second.
-		    chartDays: 90, //For `mode:series`, how much daily data will be taken. (max. 90)
-		    poolInterval : 1000*15, // (Changed in ver 1.1.0) - Only For Premium Account
-		    mode : "series", // "table", "ticker", "series"
-		    decimals: 4, // number o decimals for all values including decimals (prices, price changes, change%...)
-		    candleSticks : false, //show candle sticks if mode is Series
-		    coloredCandles : false, //colored bars: red and green for negative and positive candles
-		    premiumAccount: false, // To change poolInterval, set this to true - Only For Premium Account
-		  }
-		},
-		{
-      module: 'MMM-CoinMarketCap',
-      position: "top_right",
-      header: "Cryptocurrencies",
-			classes: 'default Daniel Woo_Young',
-      config: {
-        apiKey: 'd7e684aa-9437-46a5-9c18-9ea27ad661ad',
-        currencies: ['bitcoin', 'ethereum', 'litecoin'],
-        view: 'graph',
-        conversion: 'GBP',
-        // See below for more Configuration Options
-      }
-    },
-		{
-		disabled: false,
-		module: 'MMM-EventHorizon',
-		position: 'bottom_center',
-		classes: "default Daniel Woo_Young Oscar Cret",
-		config: {
-		    timezone: "n136",                     // See Timezone chart at bottom
-		    units: "1",          // 1=no units, 2=units initial only, 3=units abbr singular, 4= units abbr plural, 5= units full name
-		    justDays: "",                         //  yes or no // For longer countdowns. Displays ONLY days remaining
-		    size: "large",                        // small, medium or large
-		    countUp: "yes",                       // Count up after timer ends
-		    date: "2019-07-04",                   // YYYY-MM-DD format ONLY
-		    time: "00:00:01",                     // (HH:MM:SS)    Exact time you want timer to end
-		    text1: "Describe event",              // 2 lines of text during timer
-		    text2: "And here too!",               // 2 lines of text during timer
-		    text1Color: "FFFFFF",                 // Hex color codes
-		    text2Color: "62FF00",                 // Hex color codes
-		    timerColor: "FFFFFF",                 // Hex color codes
-		    endText1: "When timer ends",          // 2 lines of text when timer ends
-		    endText2: "Say something here",       // 2 lines of text when timer ends
-		    endText1Color: "FFFFFF",              // Hex color codes
-		    endText2Color: "62FF00",              // Hex color codes
-		    timerUpColor: "FFFFFF",               // Hex color codes
-		    colorpc: "000",                       // color of the background 000 = black, t = transparent
-		  }
+			module: "compliments",
+			position: "lower_third",
+			classes: 'default Daniel Cret Oscar Woo_Young'
 		},
 	]
 };

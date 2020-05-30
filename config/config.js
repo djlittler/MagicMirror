@@ -92,7 +92,7 @@ var config = {
 					//Page 5: Work/Dump
 					["compliments"],
 					//Page 6: Settings
-					["MMM-SendNotificationButton", "MMM-ViewNotifications", "MMM-NetworkConnection"]]
+					["MMM-SendNotificationButton", "MMM-ViewNotifications", "MMM-NetworkConnection"]],
         fixed: ["MMM-OnScreenMenu","clock", "MMM-page-indicator", "mm-hide-all"],
       }
     },

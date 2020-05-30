@@ -344,7 +344,7 @@ var config = {
 		//Module: CountUp
 		{
 	    module: "MMM-CountDOWN",
-			position: 'top_center',
+			position: 'top_bar',
       classes: "default Daniel Cret Oscar Woo_Young",
 	    config: {
 	      header: 'Quarantine Ends',
@@ -356,15 +356,6 @@ var config = {
 
 
 	//Bottom
-		//Module: On This Day
-    {
-      module: 'on-this-day',
-      position: 'bottom_bar',
-      classes: "default Daniel Cret Oscar Woo_Young day_interface",
-      config: {
-        // see below for configurable options...
-      }
-    },
 		//Module: CountUp
 		{
 	    module: "MMM-CountUP",
@@ -413,6 +404,15 @@ var config = {
 		},
 
 
+		//Module: On This Day
+    {
+      module: 'on-this-day',
+      position: 'bottom_bar',
+      classes: "default Daniel Cret Oscar Woo_Young day_interface",
+      config: {
+        // see below for configurable options...
+      }
+    },
 
 
 //Page 5: Work

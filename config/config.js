@@ -370,17 +370,26 @@ var config = {
 		},
 
 
+
 	//Bottom
 		//Module: On This Day (Bottom)
     {
       module: 'on-this-day',
       position: 'bottom_bar',
-      classes: "default Daniel Cret Oscar Woo_Young",
+      classes: "default Daniel Cret Oscar Woo_Young day_interface",
       config: {
         // see below for configurable options...
       }
     },
-
+		{
+	    module: "MMM-CountUP",
+			position: 'bottom_bar',
+	    config: {
+	      header: 'Quit Smoking',
+	      date: '2020-02-08',
+	      time: '00:00:00'
+	    }
+  	},
 
 
 

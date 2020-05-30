@@ -90,18 +90,10 @@ var config = {
 					//Page 4: For You
 					["MMM-ISS", "MMM-ISS-Live", "on-this-day"],
 					//Page 5: Work/Dump
-					["compliments"],
+					["compliments", "MMM-Tube-Status"],
 					//Page 6: Settings
 					["MMM-SendNotificationButton", "MMM-ViewNotifications", "MMM-NetworkConnection"]],
         fixed: ["MMM-OnScreenMenu","clock", "MMM-page-indicator", "mm-hide-all"],
-      }
-    },
-    {
-      module: 'MMM-page-indicator',
-      position: 'bottom_bar',
-      classes: 'default shared Daniel Cret Oscar Woo_Young',
-      config: {
-          pages: 5,
       }
     },
     {
@@ -169,7 +161,7 @@ var config = {
 			classes: 'default Daniel Cret Oscar Woo_Young'
 		},
 
-//Page: Homepage
+//Page 1: Homepage
 		//Module: Screencast
 		{
 			module: 'MMM-Screencast',
@@ -206,7 +198,9 @@ var config = {
 		},
 
 
-//Page: Daily Brief
+//Page 2: Daily Brief
+
+
 	//Section: Weather
 		//Module: Current Forecast
 		{
@@ -265,7 +259,7 @@ var config = {
 		    premiumAccount: false, // To change poolInterval, set this to true - Only For Premium Account
 		  }
 		},
-		//Crypto Module
+		//Module: Cryptocurrency
 		{
       module: 'MMM-CoinMarketCap',
       position: "top_right",
@@ -280,7 +274,8 @@ var config = {
       }
     },
 
-	//Section: News Ticker (Bottom)
+
+	//Bottom: News Ticker
 		//Module: Newsfeed
 		{
 			module: "newsfeed",
@@ -303,9 +298,10 @@ var config = {
 
 
 
-
 //Page 3: Scheduler
-	//Section Left: Calendas & Planners
+
+
+	//Left: Calendars & Planners
 		//Module: US Holiday **CHANGE**
 		{
 			module: "calendar",
@@ -323,7 +319,9 @@ var config = {
 		},
 		//Module: Personal Schedule **ADD**
 
-	//Section: To Do + Habits
+
+	//Right: To Do + Habits
+		//Module: ToDoist
 		{
 			module: 'MMM-Todoist',
 			position: 'top_right',	// This can be any of the regions. Best results in left or right regions.
@@ -339,7 +337,10 @@ var config = {
 				//labels: [ "Magic Mirror", "Important" ] // Tasks for any projects with these labels will be shown.
       }
 		},
-	//Section: Headers & Footers
+		//Module: Microsoft ToDo **ADD**
+
+
+	//Top
 		//Module: Countdown
 		{
 		disabled: false,
@@ -367,6 +368,9 @@ var config = {
 		    colorpc: "000",                       // color of the background 000 = black, t = transparent
 		  }
 		},
+
+
+	//Bottom
 		//Module: On This Day (Bottom)
     {
       module: 'on-this-day',
@@ -380,43 +384,9 @@ var config = {
 
 
 
+//Page 4: For you
 
-//Page: Settings
-	//Section: Network (Top)
-		//Module: Network Connection Status
-    {
-      module: 'MMM-NetworkConnection',
-      position: 'top_bar',
-      classes: 'default Daniel',
-      config: {
-      }
-    },
-		//Module: Wifi Symbol **ADD**
 
-	//Section: Notifications (Left)
-		//Module: View Notifications
-    {
-      module: 'MMM-ViewNotifications',
-      position: "top_left",
-      header: "Notifications",
-			classes: "default Daniel",
-      config: {
-        // See below for configurable options
-				excludeModules: ["clock"],
-      }
-    },
-		//Module: Send Notifications
-		{
-			module: 'MMM-SendNotificationButton',
-			position: 'top_left',	// This can be any of the regions. Best results in left or right regions.
-			header: 'Send Notification', // This is optional
-			classes: 'default Daniel',
-			config: {
-				// See 'Configuration options' for more information.
-      }
-		},
-		//Not working
-//Page: For you
 	//Section: Space
 		{
 			disabled: false,
@@ -445,12 +415,83 @@ var config = {
 		    updateInterval: 5 * 60 * 1000,
 			 }
 		},
+
+
+
+
+//Page 5: Work
+
+
+	//Right: London Transport
+		//Module: Tube Status
+		{
+	    module:		'MMM-Tube-Status',
+	    position:	'top_right',
+	    header:		'Tube Status',
+			classes: "default Daniel Cret Oscar Woo_Young",
+	    config:		{
+	      show_all:	 true
+	    }
+		},
+
+
+
+
+//Page 6: Settings
+	//Top: Network (Top)
+		//Module: Network Connection Status
+    {
+      module: 'MMM-NetworkConnection',
+      position: 'top_bar',
+      classes: 'default Daniel',
+      config: {
+      }
+    },
+		//Module: Wifi Symbol **ADD**
+
+
+	//Left: Notifications (Left)
+		//Module: View Notifications
+    {
+      module: 'MMM-ViewNotifications',
+      position: "top_left",
+      header: "Notifications",
+			classes: "default Daniel",
+      config: {
+        // See below for configurable options
+				excludeModules: ["clock"],
+      }
+    },
+		//Module: Send Notifications
+		{
+			module: 'MMM-SendNotificationButton',
+			position: 'top_left',	// This can be any of the regions. Best results in left or right regions.
+			header: 'Send Notification', // This is optional
+			classes: 'default Daniel',
+			config: {
+				// See 'Configuration options' for more information.
+      }
+		},
+
+
 //Unused
 		{
 			module: "compliments",
 			position: "lower_third",
 			classes: 'default Daniel Cret Oscar Woo_Young'
 		},
+
+
+
+		//Global Bottom
+    {
+      module: 'MMM-page-indicator',
+      position: 'bottom_bar',
+      classes: 'default shared Daniel Cret Oscar Woo_Young',
+      config: {
+          pages: 5,
+      }
+    },
 	]
 };
 

@@ -86,7 +86,7 @@ var config = {
 					//Page 2: Daily Brief
 					["currentweather", "weatherforecast", "MMM-Pollen", "MMM-AVStock", "MMM-CoinMarketCap", "newsfeed"],
 					//Page 3: Scheduler
-          ["calendar", "holidays", "MMM-Todoist", "MMM-EventHorizon", "MMM-CountUP"],
+          ["calendar", "holidays", "MMM-Todoist", "MMM-CountDOWN", "MMM-CountUP"],
 					//Page 4: For You
 					["MMM-ISS", "MMM-ISS-Live", "on-this-day"],
 					//Page 5: Work/Dump
@@ -168,7 +168,7 @@ var config = {
 			position: 'bottom_right', // This position is for a hidden <div /> and not the screencast window
 			classes: 'default Daniel Cret Oscar Woo_Young',
 			config: {
-				position: 'bottomLeft',
+				position: 'middle_center',
 				height: 300,
 				width: 500,
 				castName: 'Magic Mirror',
@@ -341,7 +341,18 @@ var config = {
 
 
 	//Top
-
+		//Module: CountUp
+		{
+	    module: "MMM-CountDOWN",
+			position: 'top_center',
+      classes: "default Daniel Cret Oscar Woo_Young",
+	    config: {
+	      header: 'Quarantine Ends',
+				date: '2020-07-01',
+	      time: '00:00:00',
+				showOnlyWeeks: true
+	    }
+  	},
 
 
 	//Bottom
@@ -361,9 +372,9 @@ var config = {
       classes: "default Daniel Cret Oscar Woo_Young",
 	    config: {
 	      header: 'Quit Smoking',
-	      //date: '2020-02-08',
-				date: '2020-12-01',
-	      time: '00:00:00'
+	      date: '2020-02-08',
+	      time: '00:00:00',
+				showOnlyWeeks: true
 	    }
   	},
 

@@ -344,7 +344,7 @@ var config = {
 		//Module: CountUp
 		{
 	    module: "MMM-CountDOWN",
-			position: 'top_center',
+			position: 'top_left',
       classes: "default Daniel Cret Oscar Woo_Young",
 	    config: {
 	      header: 'Quarantine Ends',

@@ -384,7 +384,7 @@ var config = {
 		//Module: CountUp
 		{
 	    module: "MMM-CountUP",
-			position: 'bottom_bar',
+			position: 'bottom_center',
 	    config: {
 	      header: 'Quit Smoking',
 	      date: '2020-02-08',

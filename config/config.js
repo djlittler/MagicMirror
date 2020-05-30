@@ -86,9 +86,9 @@ var config = {
 					//Page 2: Daily Brief
 					["currentweather", "weatherforecast", "MMM-Pollen", "MMM-AVStock", "MMM-CoinMarketCap", "newsfeed"],
 					//Page 3: Scheduler
-          ["calendar", "holidays", "MMM-Todoist", "MMM-CountUP"],
+          ["calendar", "holidays", "MMM-Todoist", "MMM-CountDOWN", "MMM-CountUP"],
 					//Page 4: For You
-					["MMM-ISS", "MMM-ISS-Live", "on-this-day", "MMM-CountDOWN"],
+					["MMM-ISS", "MMM-ISS-Live", "on-this-day"],
 					//Page 5: Work/Dump
 					["compliments", "MMM-Tube-Status"],
 					//Page 6: Settings

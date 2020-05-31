@@ -82,11 +82,11 @@ var config = {
       config: {
         modules: [
 					//Page 1: Homepage
-					["MMM-Screencast", "MMM-Spotify"],
+					["MMM-Screencast", "MMM-Spotify", "MMM-network-signal"],
 					//Page 2: Daily Brief
 					["currentweather", "weatherforecast", "MMM-Pollen", "MMM-AVStock", "MMM-CoinMarketCap", "newsfeed"],
 					//Page 3: Scheduler
-          ["calendar", "holidays", "MMM-Todoist", "MMM-CountDOWN", "MMM-CountUP"],
+          ["calendar", "holidays", "MMM-HabiticaStats", "MMM-Todoist", "MMM-CountDOWN", "MMM-CountUP"],
 					//Page 4: For You
 					["MMM-ISS", "MMM-ISS-Live", "on-this-day"],
 					//Page 5: Work/Dump
@@ -196,7 +196,14 @@ var config = {
 		    }
 		  }
 		},
-
+		{
+	    module: "MMM-network-signal",
+	    position: "top_bar",
+			classes: 'Daniel',
+	    config: {
+        // Configuration of the module goes here
+	    }
+		},
 
 //Page 2: Daily Brief
 
@@ -321,6 +328,16 @@ var config = {
 
 
 	//Right: To Do + Habits
+		//Module: Habitica
+		{
+			module: "MMM-HabiticaStats",
+			position: "top_right", // put it wherever you want
+			classes: 'default Daniel',
+			config: {
+				userID: "1a9ed6e3-96eb-46a0-a662-acc5660f8614",
+				APIToken: "b4cc5435-1adb-4eea-b3f4-0fabc639109e"
+			}
+		},
 		//Module: ToDoist
 		{
 			module: 'MMM-Todoist',
@@ -344,7 +361,7 @@ var config = {
 		//Module: CountUp
 		{
 	    module: "MMM-CountDOWN",
-			position: 'top_left',
+			position: 'top_center',
       classes: "default Daniel Cret Oscar Woo_Young",
 	    config: {
 	      header: 'Quarantine Ends',

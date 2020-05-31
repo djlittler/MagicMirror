@@ -84,9 +84,9 @@ var config = {
 					//Page 1: Homepage
 					["MMM-Screencast", "MMM-Spotify", "MMM-network-signal"],
 					//Page 2: Daily Brief
-					["currentweather", "weatherforecast", "MMM-Pollen", "MMM-AVStock", "MMM-CoinMarketCap", "newsfeed","MMM-Modulebar"],
+					["currentweather", "weatherforecast", "MMM-Pollen", "MMM-AVStock", "MMM-CoinMarketCap", "newsfeed"],
 					//Page 3: Scheduler
-          ["calendar", "holidays", "MMM-HabiticaStats", "MMM-Todoist", "MMM-CountDOWN", "MMM-CountUP"],
+          ["calendar", "holidays", "MMM-HabiticaStats", "MMM-Todoist", "MMM-CountDOWN", "MMM-CountUP", "MMM-Modulebar"],
 					//Page 4: For You
 					["MMM-ISS", "MMM-ISS-Live", "on-this-day"],
 					//Page 5: Work/Dump
@@ -347,7 +347,7 @@ var config = {
 			config: {
 				userID: "1a9ed6e3-96eb-46a0-a662-acc5660f8614",
 				APIToken: "b4cc5435-1adb-4eea-b3f4-0fabc639109e",
-				zoom: 0.7,
+				zoom: 0.5,
 			}
 		},
 		//Module: ToDoist

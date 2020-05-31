@@ -161,6 +161,8 @@ var config = {
 			classes: 'default Daniel Cret Oscar Woo_Young'
 		},
 
+
+
 //Page 1: Homepage
 		//Module: Screencast
 		{
@@ -204,6 +206,15 @@ var config = {
         // Configuration of the module goes here
 	    }
 		},
+    {
+	    module: "MMM-Modulebar",
+	    position: "bottom_bar", // This can be any of the regions.
+	    header: "Modules", // Optional
+	    classes: "default Daniel", // Optional
+	    config: {
+	        // See 'Configuration options' for more information.
+	    }
+    }
 
 //Page 2: Daily Brief
 

@@ -214,7 +214,7 @@ var config = {
 	    config: {
 	        // See 'Configuration options' for more information.
 	    }
-    }
+    },
 
 //Page 2: Daily Brief
 

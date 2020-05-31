@@ -84,7 +84,7 @@ var config = {
 					//Page 1: Homepage
 					["MMM-Screencast", "MMM-Spotify", "MMM-network-signal"],
 					//Page 2: Daily Brief
-					["currentweather", "weatherforecast", "MMM-Pollen", "MMM-AVStock", "MMM-CoinMarketCap", "newsfeed"],
+					["currentweather", "weatherforecast", "MMM-Pollen", "MMM-AVStock", "MMM-CoinMarketCap", "newsfeed","MMM-Modulebar"],
 					//Page 3: Scheduler
           ["calendar", "holidays", "MMM-HabiticaStats", "MMM-Todoist", "MMM-CountDOWN", "MMM-CountUP"],
 					//Page 4: For You
@@ -346,7 +346,8 @@ var config = {
 			classes: 'default Daniel',
 			config: {
 				userID: "1a9ed6e3-96eb-46a0-a662-acc5660f8614",
-				APIToken: "b4cc5435-1adb-4eea-b3f4-0fabc639109e"
+				APIToken: "b4cc5435-1adb-4eea-b3f4-0fabc639109e",
+				zoom: 0.7,
 			}
 		},
 		//Module: ToDoist

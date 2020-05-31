@@ -208,7 +208,7 @@ var config = {
 		},
     {
 	    module: "MMM-Modulebar",
-	    position: "bottom_bar", // This can be any of the regions.
+	    position: "bottom_left", // This can be any of the regions.
 	    header: "Modules", // Optional
 	    classes: "default Daniel", // Optional
 	    config: {

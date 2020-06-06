@@ -35,6 +35,26 @@ var config = {
 			     // true, force serveronly mode, because you want to.. no UI on this device
 
 	modules: [
+  	{
+      module: 'MMM-pages',
+      classes: 'default Daniel Cret Oscar Woo_Young',
+      config: {
+        modules: [
+					//Page 1: Homepage
+					["MMM-Screencast", "MMM-Spotify", "MMM-network-signal"],
+					//Page 2: Daily Brief
+					["currentweather", "weatherforecast", "MMM-Pollen", "MMM-AVStock", "MMM-CoinMarketCap", "newsfeed"],
+					//Page 3: Scheduler
+          ["calendar", "holidays", "MMM-HabiticaStats", "MMM-Todoist", "MMM-CountDOWN", "MMM-CountUP", "MMM-Modulebar"],
+					//Page 4: For You
+					["MMM-ISS", "MMM-ISS-Live", "on-this-day"],
+					//Page 5: Work/Dump
+					["compliments", "MMM-Tube-Status"],
+					//Page 6: Settings
+					["MMM-SendNotificationButton", "MMM-ViewNotifications", "MMM-NetworkConnection"]],
+        fixed: ["MMM-OnScreenMenu","clock", "MMM-page-indicator", "mm-hide-all", "MMM-Face-Reco-DNN"],
+      }
+    },
     {
       module: 'MMM-Face-Reco-DNN',
       config: {
@@ -74,26 +94,6 @@ var config = {
         extendDataset: false,
         // If extendDataset is true, you need to set the full path of the dataset
         dataset: 'modules/MMM-Face-Reco-DNN/dataset/'
-      }
-    },
-  	{
-      module: 'MMM-pages',
-      classes: 'default Daniel Cret Oscar Woo_Young',
-      config: {
-        modules: [
-					//Page 1: Homepage
-					["MMM-Screencast", "MMM-Spotify", "MMM-network-signal"],
-					//Page 2: Daily Brief
-					["currentweather", "weatherforecast", "MMM-Pollen", "MMM-AVStock", "MMM-CoinMarketCap", "newsfeed"],
-					//Page 3: Scheduler
-          ["calendar", "holidays", "MMM-HabiticaStats", "MMM-Todoist", "MMM-CountDOWN", "MMM-CountUP", "MMM-Modulebar"],
-					//Page 4: For You
-					["MMM-ISS", "MMM-ISS-Live", "on-this-day"],
-					//Page 5: Work/Dump
-					["compliments", "MMM-Tube-Status"],
-					//Page 6: Settings
-					["MMM-SendNotificationButton", "MMM-ViewNotifications", "MMM-NetworkConnection"]],
-        fixed: ["MMM-OnScreenMenu","clock", "MMM-page-indicator", "mm-hide-all"],
       }
     },
     {

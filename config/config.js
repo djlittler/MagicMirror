@@ -214,7 +214,7 @@ var config = {
           // The config property is optional.
           // See 'Configuration options' for more information.
       }
-    }
+    },
 
     {
 	    module: "MMM-Modulebar",

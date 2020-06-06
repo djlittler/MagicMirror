@@ -26,7 +26,7 @@ var config = {
 	httpsCertificate: "", 	// HTTPS Certificate path, only require when useHttps is true
 
 	language: "en",
-	timeFormat: 24,
+	timeFormat: 12,
 	units: "metric",
 	// serverOnly:  true/false/"local" ,
 			     // local for armv6l processors, default
@@ -206,6 +206,16 @@ var config = {
         // Configuration of the module goes here
 	    }
 		},
+    {
+      module: 'MMM-SimpleLogo',
+      position: 'top_center',    // This can be any of the regions.
+			classes: 'Daniel',
+      config: {
+          // The config property is optional.
+          // See 'Configuration options' for more information.
+      }
+    }
+
     {
 	    module: "MMM-Modulebar",
 	    position: "bottom_left", // This can be any of the regions.
@@ -459,7 +469,23 @@ var config = {
 	    }
 		},
 
-
+		// {
+		// 	module: "MMM-windy",
+		// 	position: 'fullscreen_above', // this must be set to 'fullscreen_above'
+		// 	config: {
+		// 		apiKey: 'YOUR_API_KEY',
+		//     initLoadDelay: 50, // optional, default is 50 milliseconds
+		// 		location: {	// optional location in latitude and longitude
+		// 			lat: 29.629633,
+		// 			lng: -98.495894,
+		// 		},
+		// 		zoom: 5,	// optional zoom level, default is 5.  Bigger numbers zoom closer
+		// 		particlesAnim: 'on',	// optional, turns particles animation on or off, default 'on'
+		// 		graticule: false,	// optional
+		// 		englishLabels: false, // optional
+		// 		hourFormat: '12h' // optional
+		// 	}
+		// }
 
 
 //Page 6: Settings

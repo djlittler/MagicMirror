@@ -1,6 +1,6 @@
 #!/bin/bash
-
-deactivate
+source virtualenvwrapper.sh
+deactivate cv
 git clone https://github.com/djlittler/MagicMirror.git display
 workon cv
 npm run start

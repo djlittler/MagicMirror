@@ -41,9 +41,9 @@ var config = {
       config: {
         modules: [
 					//Page 1: Homepage
-					["clock", "MMM-Screencast", "MMM-Spotify", "MMM-network-signal", "MMM-SimpleLogo"],
+					["MMM-Screencast", "MMM-Spotify", "MMM-network-signal", "MMM-SimpleLogo"],
 					//Page 2: Daily Brief
-					["currentweather", "weatherforecast", "MMM-Pollen", "MMM-AVStock", "MMM-CoinMarketCap", "newsfeed"],
+					["currentweather", "weatherforecast", "MMM-Pollen", "MMM-AVStock", "MMM-CoinMarketCap", "newsfeed", "clock"],
 					//Page 3: Scheduler
           ["calendar", "holidays", "MMM-HabiticaStats", "MMM-Todoist", "MMM-CountDOWN", "MMM-CountUP"],
 					//Page 4: For You

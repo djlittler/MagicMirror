@@ -45,14 +45,14 @@ var config = {
 					//Page 2: Daily Brief
 					["currentweather", "weatherforecast", "MMM-Pollen", "MMM-AVStock", "MMM-CoinMarketCap", "newsfeed"],
 					//Page 3: Scheduler
-          ["calendar", "holidays", "MMM-HabiticaStats", "MMM-Todoist", "MMM-CountDOWN", "MMM-CountUP", "MMM-Modulebar"],
+          ["calendar", "holidays", "MMM-HabiticaStats", "MMM-Todoist", "MMM-CountDOWN", "MMM-CountUP"],
 					//Page 4: For You
 					["MMM-ISS", "MMM-ISS-Live", "on-this-day"],
 					//Page 5: Work/Dump
 					["compliments", "MMM-Tube-Status"],
 					//Page 6: Settings
 					["MMM-SendNotificationButton", "MMM-ViewNotifications", "MMM-NetworkConnection"]],
-        fixed: ["MMM-OnScreenMenu","clock", "MMM-page-indicator", "mm-hide-all", "MMM-Face-Reco-DNN"],
+        fixed: ["MMM-OnScreenMenu","clock", "MMM-page-indicator", "mm-hide-all", "MMM-Face-Reco-DNN", "MMM-Modulebar"],
       }
     },
     {

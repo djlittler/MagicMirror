@@ -215,78 +215,6 @@ var config = {
           // See 'Configuration options' for more information.
       }
     },
-    {
-	    module: "MMM-Modulebar",
-	    position: "bottom_left", // This can be any of the regions.
-	    header: "Modules", // Optional
-	    classes: "default Daniel", // Optional
-		  config: {
-				buttons: {
-				  "1": {
-			      // This is a button with text and a symbol
-			      module: "currentweather",
-			      symbol: "cloud",
-			    },
-			    "2": {
-			      // A button with only a symbol and an idnum to target a specific weatherforecast module.
-			      module: "weatherforecast",
-			      symbol: "sun-o",
-			      // The ID-number of the "weatherforecast" module (when you have more then one).
-			      //idnum: 8,
-			    },
-			    "3": {
-						module: "MMM-Pollen",
-						symbol: "tree",
-					},
-			    "4": {
-						module: "MMM-AVStock",
-						symbol: "gbp",
-			    },
-			    "5": {
-						module: "MMM-CoinMarketCap",
-						symbol: "btc",
-					},
-			    "6": {
-						module: "calendar",
-						symbol: "calendar-o",
-			    },
-			    "7": {
-						module: "newsfeed",
-						symbol: "newspaper-o",
-					},
-			    "8": {
-						module: "MMM-CountDOWN",
-						symbol: "angle-double-up",
-					},
-			    "9": {
-						module: "MMM-CountUP",
-						symbol: "angle-double-down",
-					},
-			    "10": {
-						module: "clock",
-						symbol: "clock-o",
-					},
-			    "11": {
-						module: "MMM-Spotify",
-						symbol: "spotify",
-					},
-					//
-			    // "12": {
-					// 	module: "newsfeed",
-					// 	symbol: "tree",
-					// },
-			    // "13": {
-					// 	module: "newsfeed",
-					// 	symbol: "tree",
-					// },
-			    // "14": {
-					// 	module: "newsfeed",
-					// 	symbol: "tree",
-					// },
-
-				}
-			}
-    },
 
 //Page 2: Daily Brief
 
@@ -625,6 +553,78 @@ var config = {
 		// },
 
 		//Global Bottom
+    {
+	    module: "MMM-Modulebar",
+	    position: "bottom_left", // This can be any of the regions.
+	    header: "Modules", // Optional
+	    classes: "default Daniel", // Optional
+		  config: {
+				buttons: {
+				  "1": {
+			      // This is a button with text and a symbol
+			      module: "currentweather",
+			      symbol: "cloud",
+			    },
+			    "2": {
+			      // A button with only a symbol and an idnum to target a specific weatherforecast module.
+			      module: "weatherforecast",
+			      symbol: "sun-o",
+			      // The ID-number of the "weatherforecast" module (when you have more then one).
+			      //idnum: 8,
+			    },
+			    "3": {
+						module: "MMM-Pollen",
+						symbol: "tree",
+					},
+			    "4": {
+						module: "MMM-AVStock",
+						symbol: "gbp",
+			    },
+			    "5": {
+						module: "MMM-CoinMarketCap",
+						symbol: "btc",
+					},
+			    "6": {
+						module: "calendar",
+						symbol: "calendar-o",
+			    },
+			    "7": {
+						module: "newsfeed",
+						symbol: "newspaper-o",
+					},
+			    "8": {
+						module: "MMM-CountDOWN",
+						symbol: "angle-double-up",
+					},
+			    "9": {
+						module: "MMM-CountUP",
+						symbol: "angle-double-down",
+					},
+			    "10": {
+						module: "clock",
+						symbol: "clock-o",
+					},
+			    "11": {
+						module: "MMM-Spotify",
+						symbol: "spotify",
+					},
+					//
+			    // "12": {
+					// 	module: "newsfeed",
+					// 	symbol: "tree",
+					// },
+			    // "13": {
+					// 	module: "newsfeed",
+					// 	symbol: "tree",
+					// },
+			    // "14": {
+					// 	module: "newsfeed",
+					// 	symbol: "tree",
+					// },
+
+				}
+			}
+    },
     {
       module: 'MMM-page-indicator',
       position: 'bottom_bar',

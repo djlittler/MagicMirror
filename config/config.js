@@ -41,9 +41,9 @@ var config = {
       config: {
         modules: [
 					//Page 1: Homepage
-					["MMM-Screencast", "MMM-Spotify", "MMM-network-signal", "MMM-SimpleLogo"],
+					["clock", "MMM-Screencast", "MMM-Spotify", "MMM-network-signal", "MMM-SimpleLogo"],
 					//Page 2: Daily Brief
-					["currentweather", "weatherforecast", "MMM-Pollen", "MMM-AVStock", "MMM-CoinMarketCap", "newsfeed", "clock"],
+					["currentweather", "weatherforecast", "MMM-Pollen", "MMM-AVStock", "MMM-CoinMarketCap", "newsfeed"],
 					//Page 3: Scheduler
           ["calendar", "holidays", "MMM-HabiticaStats", "MMM-Todoist", "MMM-CountDOWN", "MMM-CountUP"],
 					//Page 4: For You
@@ -600,14 +600,15 @@ var config = {
 						module: "MMM-CountUP",
 						symbol: "angle-double-down",
 					},
-			    "10": {
-						module: "clock",
-						symbol: "clock-o",
-					},
-			    "11": {
-						module: "MMM-Spotify",
-						symbol: "spotify",
-					},
+					//
+			    // "10": {
+					// 	module: "clock",
+					// 	symbol: "clock-o",
+					// },
+			    // "11": {
+					// 	module: "MMM-Spotify",
+					// 	symbol: "spotify",
+					// },
 					//
 			    // "12": {
 					// 	module: "newsfeed",

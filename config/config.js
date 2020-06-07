@@ -41,9 +41,9 @@ var config = {
       config: {
         modules: [
 					//Page 1: Homepage
-					["MMM-Screencast", "MMM-Spotify", "MMM-network-signal", "MMM-SimpleLogo", "currentweather", "MMM-AVStock"],
+					["MMM-Screencast", "MMM-Spotify", "MMM-network-signal", "MMM-SimpleLogo"],
 					//Page 2: Daily Brief
-					["weatherforecast", "MMM-Pollen", "MMM-CoinMarketCap", "newsfeed"],
+					["currentweather", "weatherforecast", "MMM-Pollen", "MMM-CoinMarketCap", "newsfeed"],
 					//Page 3: Scheduler
           ["calendar", "holidays", "MMM-HabiticaStats", "MMM-Todoist", "MMM-CountDOWN", "MMM-CountUP"],
 					//Page 4: For You
@@ -52,7 +52,7 @@ var config = {
 					["compliments", "MMM-Tube-Status"],
 					//Page 6: Settings
 					["MMM-SendNotificationButton", "MMM-ViewNotifications", "MMM-NetworkConnection"]],
-        fixed: ["MMM-OnScreenMenu","clock", "MMM-page-indicator", "mm-hide-all", "MMM-Face-Reco-DNN", "MMM-Modulebar"],
+        fixed: ["MMM-OnScreenMenu","clock", "MMM-page-indicator", "mm-hide-all", "MMM-Face-Reco-DNN", "MMM-Modulebar", "MMM-AVStock"],
       }
     },
     {

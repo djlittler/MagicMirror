@@ -600,15 +600,15 @@ var config = {
 						module: "MMM-CountUP",
 						symbol: "angle-double-down",
 					},
-					//
-			    // "10": {
-					// 	module: "clock",
-					// 	symbol: "clock-o",
-					// },
-			    // "11": {
-					// 	module: "MMM-Spotify",
-					// 	symbol: "spotify",
-					// },
+
+			    "10": {
+						module: "clock",
+						symbol: "clock-o",
+					},
+			    "11": {
+						module: "MMM-Spotify",
+						symbol: "spotify",
+					},
 					//
 			    // "12": {
 					// 	module: "newsfeed",

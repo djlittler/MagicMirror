@@ -176,11 +176,6 @@ var config = {
 				castName: 'Magic Mirror',
 			}
     },
-		{
-			module: "compliments",
-			position: "lower_third",
-			classes: 'default Daniel Cret Oscar Woo_Young'
-		},
 		//Module: Spotify
 		{
 		  module: "MMM-Spotify",
@@ -220,7 +215,11 @@ var config = {
           // See 'Configuration options' for more information.
       }
     },
-
+		{
+			module: "compliments",
+			position: "lower_third",
+			classes: 'default Daniel Cret Oscar Woo_Young'
+		},
 //Page 2: Daily Brief
 
 

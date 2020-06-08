@@ -206,7 +206,7 @@ var config = {
 		{
 	    module: "MMM-network-signal",
 	    position: "top_bar",
-			classes: 'Daniel',
+			classes: 'default Daniel',
 	    config: {
         // Configuration of the module goes here
 	    }
@@ -214,7 +214,7 @@ var config = {
     {
       module: 'MMM-SimpleLogo',
       position: 'top_center',    // This can be any of the regions.
-			classes: 'Daniel',
+			classes: 'default Daniel',
       config: {
           // The config property is optional.
           // See 'Configuration options' for more information.

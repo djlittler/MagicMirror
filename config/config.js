@@ -415,22 +415,23 @@ var config = {
 		   animationSpeed: 1000,            // fade speed
 			}
 		},
-		{
-			disabled: false,
-			module: 'MMM-ISS',
-			position: 'bottom_right',
-			classes: 'default Daniel',
-			config: {
-			  country: "England",
-			  city: "London",
-		    lat: "51.5336",                // latitude
-		    lng: "-0.1199",                // longitude
-		    units: "km",                   // mi = miles, mph / km = kilometers, km/h
-		    useHeader: false,              // true if you want a header
-		    header: "",                    // Any text you want. useHeader must be true
-		    updateInterval: 5 * 60 * 1000,
-			 }
-		},
+		//
+		// {
+		// 	disabled: false,
+		// 	module: 'MMM-ISS',
+		// 	position: 'bottom_right',
+		// 	classes: 'default Daniel',
+		// 	config: {
+		// 	  country: "England",
+		// 	  city: "London",
+		//     lat: "51.5336",                // latitude
+		//     lng: "-0.1199",                // longitude
+		//     units: "km",                   // mi = miles, mph / km = kilometers, km/h
+		//     useHeader: false,              // true if you want a header
+		//     header: "",                    // Any text you want. useHeader must be true
+		//     updateInterval: 5 * 60 * 1000,
+		// 	 }
+		// },
 
 
 		//Module: On This Day
@@ -609,19 +610,18 @@ var config = {
 						module: "MMM-Spotify",
 						symbol: "spotify",
 					},
-					//
-			    // "12": {
-					// 	module: "newsfeed",
-					// 	symbol: "tree",
-					// },
-			    // "13": {
-					// 	module: "newsfeed",
-					// 	symbol: "tree",
-					// },
-			    // "14": {
-					// 	module: "newsfeed",
-					// 	symbol: "tree",
-					// },
+			    "12": {
+						module: "MMM-Tube-Status",
+						symbol: "subway",
+					},
+			    "13": {
+						module: "compliments",
+						symbol: "smile-o",
+					},
+			    "14": {
+						module: "MMM-ISS-Live",
+						symbol: "space-shuttle",
+					},
 
 				}
 			}

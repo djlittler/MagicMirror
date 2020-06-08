@@ -206,20 +206,21 @@ var config = {
 		{
 	    module: "MMM-network-signal",
 	    position: "top_bar",
-			classes: 'default Daniel',
+			classes: 'Daniel',
 	    config: {
         // Configuration of the module goes here
 	    }
 		},
-    {
-      module: 'MMM-SimpleLogo',
-      position: 'top_center',    // This can be any of the regions.
-			classes: 'default Daniel',
-      config: {
-          // The config property is optional.
-          // See 'Configuration options' for more information.
-      }
-    },
+
+    // {
+    //   module: 'MMM-SimpleLogo',
+    //   position: 'top_center',    // This can be any of the regions.
+		// 	classes: 'Daniel',
+    //   config: {
+    //       // The config property is optional.
+    //       // See 'Configuration options' for more information.
+    //   }
+    // },
 //Page 2: Daily Brief
 
 

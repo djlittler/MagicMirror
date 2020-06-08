@@ -41,19 +41,20 @@ var config = {
       config: {
         modules: [
 					//Page 1: Homepage
-					["clock", "MMM-Screencast", "MMM-Spotify", "MMM-network-signal", "MMM-SimpleLogo", "compliments"],
+					["clock", "MMM-Screencast", "MMM-Spotify", "MMM-network-signal"],
 					//Page 2: Daily Brief
 					["currentweather", "weatherforecast", "MMM-Pollen", "MMM-AVStock", "MMM-CoinMarketCap", "newsfeed"],
 					//Page 3: Scheduler
           ["calendar", "holidays", "MMM-HabiticaStats", "MMM-Todoist", "MMM-CountDOWN", "MMM-CountUP"],
 					//Page 4: For You
-					["MMM-ISS", "MMM-ISS-Live", "on-this-day"],
+					["MMM-ISS", "MMM-ISS-Live", "on-this-day", "compliments"],
 					//Page 5: Work/Dump
 					["MMM-Tube-Status"],
 					//Page 6: Settings
 					["MMM-SendNotificationButton", "MMM-ViewNotifications", "MMM-NetworkConnection"]],
         fixed: ["MMM-OnScreenMenu", "MMM-page-indicator", "mm-hide-all", "MMM-Face-Reco-DNN", "MMM-Modulebar"],
       }
+			//"MMM-SimpleLogo"
     },
     {
       module: 'MMM-Face-Reco-DNN',
@@ -622,7 +623,6 @@ var config = {
 						module: "MMM-ISS-Live",
 						symbol: "space-shuttle",
 					},
-
 				}
 			}
     },

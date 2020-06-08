@@ -199,6 +199,11 @@ var config = {
 		  }
 		},
 		{
+			module: "compliments",
+			position: "lower_third",
+			classes: 'default Daniel Cret Oscar Woo_Young'
+		},
+		{
 	    module: "MMM-network-signal",
 	    position: "top_bar",
 			classes: 'Daniel',
@@ -215,11 +220,6 @@ var config = {
           // See 'Configuration options' for more information.
       }
     },
-		{
-			module: "compliments",
-			position: "lower_third",
-			classes: 'default Daniel Cret Oscar Woo_Young'
-		},
 //Page 2: Daily Brief
 
 

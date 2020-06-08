@@ -507,7 +507,7 @@ var config = {
 			classes: "default Daniel",
       config: {
         // See below for configurable options
-				excludeModules: ["clock"],
+				excludeModules: ["clock", "newsfeed"],
       }
     },
 		//Module: Send Notifications

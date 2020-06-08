@@ -560,7 +560,7 @@ var config = {
 	    header: "Modules", // Optional
 	    classes: "default Daniel", // Optional
 		  config: {
-				allowForce: true,
+				//allowForce: true,
 				buttons: {
 				  "1": {
 			      // This is a button with text and a symbol

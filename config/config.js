@@ -557,7 +557,7 @@ var config = {
 		//Global Bottom
     {
 	    module: "MMM-Modulebar",
-	    position: "bottom_bar", // This can be any of the regions.
+	    position: "bottom_center", // This can be any of the regions.
 	    header: "Modules", // Optional
 	    classes: "default Daniel", // Optional
 		  config: {

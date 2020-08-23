@@ -164,6 +164,7 @@ var config = {
 		{
 		module: "MMM-DigClock",
 		position: "top_left",	// This can be any of the regions.
+		classes: 'default Daniel Cret Oscar Woo_Young',
 		config: {
 			showDate: true,
 			showWeek: false,
@@ -213,6 +214,7 @@ var config = {
 		{
 		  module: "MMM-OClock",
 		  position: "middle_center",
+			classes: 'default Daniel Cret Oscar Woo_Young',
 		  config: {
 		    locale: "", //default is system locale, or use like this. "de-DE"
 		    canvasWidth:1000,
@@ -277,7 +279,7 @@ var config = {
 		{
 	    module: "MMM-network-signal",
 	    position: "top_bar",
-			classes: 'Daniel',
+			classes: 'default Daniel',
 	    config: {
         // Configuration of the module goes here
 	    }

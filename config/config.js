@@ -210,6 +210,7 @@ var config = {
 		    }
 		  }
 		},
+
 		{
 		  module: "MMM-OClock",
 		  position: "middle_center",

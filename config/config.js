@@ -163,7 +163,7 @@ var config = {
 		},
 		{
 		module: "MMM-DigClock",
-		position: "top_bar",	// This can be any of the regions.
+		position: "top_left",	// This can be any of the regions.
 		config: {
 			showDate: true,
 			showWeek: false,
@@ -210,7 +210,6 @@ var config = {
 		    }
 		  }
 		},
-
 		{
 		  module: "MMM-OClock",
 		  position: "middle_center",

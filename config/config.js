@@ -183,7 +183,7 @@ var config = {
 		  position: "bottom_right", // "bottom_bar" or "top_bar" for miniBar
 			classes: 'default Daniel',
 		  config: {
-		    debug: false, // debug mode
+		    debug: false, // debug modes
 		    style: "default", // "default" or "mini" available (inactive for miniBar)
 		    control: "default",
 		    accountDefault: 0, // default account number, attention : 0 is the first account
@@ -303,7 +303,7 @@ var config = {
 		//Module: Newsfeed
 		{
 			module: "newsfeed",
-			position: "bottom_bar",
+			position: "bottom_center",
 			classes: 'default Daniel Cret Oscar Woo_Young',
 			config: {
 				feeds: [
@@ -557,7 +557,7 @@ var config = {
 		//Global Bottom
     {
 	    module: "MMM-Modulebar",
-	    position: "bottom_left", // This can be any of the regions.
+	    position: "bottom_bar", // This can be any of the regions.
 	    header: "Modules", // Optional
 	    classes: "default Daniel", // Optional
 		  config: {

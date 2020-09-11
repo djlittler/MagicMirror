@@ -695,6 +695,10 @@ var config = {
 						module: "MMM-ISS-Live",
 						symbol: "space-shuttle",
 					},
+			    "15": {
+						module: "MMM-OClock",
+						symbol: "circle-o-notch",
+					},
 				}
 			}
     },

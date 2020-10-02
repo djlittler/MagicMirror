@@ -41,9 +41,9 @@ var config = {
       config: {
         modules: [
 					//Page 1: Homepage
-					["clock", "MMM-Screencast", "MMM-OClock", "MMM-Spotify", "MMM-network-signal"],
+					["clock", "MMM-Screencast", "MMM-Habits", "MMM-Spotify", "MMM-network-signal"],
 					//Page 2: Daily Brief
-					["MMM-DigClock", "currentweather", "weatherforecast", "MMM-Pollen", "MMM-AVStock", "MMM-CoinMarketCap", "newsfeed"],
+					["MMM-DigClock", "currentweather", "MMM-OClock", "weatherforecast", "MMM-Pollen", "MMM-AVStock", "MMM-CoinMarketCap", "newsfeed"],
 					//Page 3: Scheduler
           ["MMM-DigClock", "calendar", "holidays", "MMM-HabiticaStats", "MMM-Todoist", "MMM-CountDOWN", "MMM-CountUP"],
 					//Page 4: For You
@@ -392,7 +392,16 @@ var config = {
 		},
 
 
+		{
+			module: 'MMM-Habits',
+			position: 'center',	// This can be any of the regions. Best results in left or right regions.
+			header: 'Habits', // This is optional
+			classes: 'default Daniel',
+			config: { // See 'Configuration options' for more information.
 
+				//labels: [ "Magic Mirror", "Important" ] // Tasks for any projects with these labels will be shown.
+      }
+		},
 
 //Page 3: Scheduler
 

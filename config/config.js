@@ -394,13 +394,13 @@ var config = {
 
 		{
 			module: 'MMM-Habits',
-			position: 'center',	// This can be any of the regions. Best results in left or right regions.
+			position: 'top_left',	// This can be any of the regions. Best results in left or right regions.
 			header: 'Habits', // This is optional
 			classes: 'default Daniel',
 			config: { // See 'Configuration options' for more information.
 
 				//labels: [ "Magic Mirror", "Important" ] // Tasks for any projects with these labels will be shown.
-      }
+	    }
 		},
 
 //Page 3: Scheduler

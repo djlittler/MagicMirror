@@ -182,8 +182,6 @@ var config = {
 		{
 		  module: "MMM-Widget",
 			classes: 'default Daniel Cret Oscar Woo_Young',
-			position: "bottom_left",
-
 		  config: {
 		    widgets: [
 		      {
@@ -193,11 +191,10 @@ var config = {
 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
 </script>
         `,
-        position: "top_right",
+        position: "bottom_left",
         width: "300px",
         height: "600px",
-		      },
-		      ... // If you want to display several widgets, add here.
+		      }
 		    ]
 		  }
 		},

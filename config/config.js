@@ -178,6 +178,24 @@ var config = {
 
 //Page 1: Homepage
 		//Module: Screencast
+
+		{
+		  module: "MMM-Widget",
+			classes: 'default Daniel Cret Oscar Woo_Young',
+			position: "bottom_left",
+
+		  config: {
+		    widgets: [
+		      {
+		        html:``, //insert your script or html codes here.
+		        width: "800px",
+		        height: "400px",
+		        backgroundColor: "#FFF"
+		      },
+		      ... // If you want to display several widgets, add here.
+		    ]
+		  }
+		},
 		{
 			module: 'MMM-Screencast',
 			position: 'bottom_right', // This position is for a hidden <div /> and not the screencast window

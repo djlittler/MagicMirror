@@ -185,7 +185,7 @@ var config = {
 		  config: {
 		    widgets: [
 		      {
-		        html:`<a class="weatherwidget-io" href="file:///home/pi/Github/MagicMirror/modules/MMM-Habits/habits.html"" >NEW YORK WEATHER</a>`,
+		        html:`<a class="weatherwidget-io" href="file:///home/pi/Github/MagicMirror/modules/MMM-Habits/segmented-circle-stroke/dist/index.html"" >NEW YORK WEATHER</a>`,
 		        position: "bottom_left",
 		        width: "300px",
 		        height: "600px",

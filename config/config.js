@@ -185,12 +185,10 @@ var config = {
 		  config: {
 		    widgets: [
 		      {
-        html:`
-<a class="weatherwidget-io" href="file:///home/pi/Github/MagicMirror/modules/MMM-Habits/habits.html"" >NEW YORK WEATHER</a>
-        `,
-        position: "bottom_left",
-        width: "300px",
-        height: "600px",
+		        html:`<a class="weatherwidget-io" href="file:///home/pi/Github/MagicMirror/modules/MMM-Habits/habits.html"" >NEW YORK WEATHER</a>`,
+		        position: "bottom_left",
+		        width: "300px",
+		        height: "600px",
 		      }
 		    ]
 		  }

@@ -187,10 +187,15 @@ var config = {
 		  config: {
 		    widgets: [
 		      {
-		        html:``, //insert your script or html codes here.
-		        width: "800px",
-		        height: "400px",
-		        backgroundColor: "#FFF"
+        html:`
+<a class="weatherwidget-io" href="https://forecast7.com/en/40d71n74d01/new-york/" data-label_1="NEW YORK" data-label_2="WEATHER" data-theme="original" >NEW YORK WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+        `,
+        position: "top_right",
+        width: "300px",
+        height: "600px",
 		      },
 		      ... // If you want to display several widgets, add here.
 		    ]

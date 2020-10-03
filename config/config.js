@@ -194,22 +194,22 @@ var config = {
           <script type="text/javascript">
           new TradingView.MediumWidget(
           {
-          "container_id": "tv-medium-widget",
-          "symbols": [
-            [
-              "Apple",
-              "AAPL "
-            ]
-          ],
-          "greyText": "Quotes by",
-          "gridLineColor": "#e9e9ea",
-          "fontColor": "#83888D",
-          "underLineColor": "#dbeffb",
-          "trendLineColor": "#4bafe9",
-          "width": "800px",
-          "height": "400px",
-          "locale": "en"
-        }
+	          "container_id": "tv-medium-widget",
+	          "symbols": [
+	            [
+	              "Apple",
+	              "AAPL "
+	            ]
+	          ],
+	          "greyText": "Quotes by",
+	          "gridLineColor": "#e9e9ea",
+	          "fontColor": "#83888D",
+	          "underLineColor": "#dbeffb",
+	          "trendLineColor": "#4bafe9",
+	          "width": "800px",
+	          "height": "400px",
+	          "locale": "en"
+        		}
           );
           </script>
         </div>
